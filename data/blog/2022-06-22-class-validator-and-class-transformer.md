@@ -532,7 +532,8 @@ let validator = Container.get(Validator);
 
 > Nest.js中使用的验证管道就是class-validator+class-transformer结合的方式
 
-由于装饰器的性质，必须使用`new class()`语法实例化待验证的对象。如果你使用了class-validator装饰器定义了类，并且想要验证普通的JS对象（文本对象或JSON.parse返回），则需要将其转换为类实例（例如，使用[class-transformer]([class-transformer](https://github.com/pleerock/class-transformer))）或仅使用[class-transformer-validator](https://github.com/19majkel94/class-transformer-validator)扩展可以为您完成此任务。
+由于装饰器的性质，必须使用`new class()`语法实例化待验证的对象。如果你使用了class-validator装饰器定义了类，并且想要验证普通的JS对象（文本对象或JSON.parse返回），则需要将其转换为类实例
+（例如，使用[class-transformer](https://github.com/pleerock/class-transformer)或仅使用[class-transformer-validator](https://github.com/19majkel94/class-transformer-validator)扩展可以为您完成此任务。
 
 ### 自定义验证
 
@@ -771,9 +772,9 @@ fetch("users.json").then((users: Object[]) => {
 
 2. 安装`reflect-metadata`
 
-   > reflect-metadata是必须的，具体使用请看[我这边文章]([https://test.pincman.com/notes/decorator.html#%E5%85%83%E4%BF%A1%E6%81%AF%E5%8F%8D%E5%B0%84API](https://test.pincman.com/notes/decorator.html#元信息反射API))
+   > reflect-metadata是必须的，具体使用请看[这篇博文](./2022-06-23-ts-decorator.md#元信息反射API)
 
-         安装后在`app.ts`这种顶层文件你需要`import "reflect-metadata";`
+安装后在`app.ts`这种顶层文件你需要`import "reflect-metadata";`
 
 ### 基础方法
 
