@@ -1,0 +1,48 @@
+:root {
+    --collapse-button-bg-color-dark: #2e333a;
+}
+
+@media (min-width: 997px) {
+    .collapseSidebarButton {
+        position: absolute;
+        right: 12px;
+        bottom: 12px;
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        width: 24px;
+        height: 24px;
+        padding: 12px;
+        color: rgb(134 144 156);
+        cursor: pointer;
+        background-color: rgb(219 221 224);
+        border: none;
+        border-radius: 2px;
+
+        &:hover {
+            background-color: rgb(204 205 209);
+        }
+    }
+
+    .collapseSidebarButtonIcon {
+        margin-top: 4px;
+        transform: rotate(180deg);
+    }
+
+    [dir='rtl'] .collapseSidebarButtonIcon {
+        transform: rotate(0);
+    }
+
+    [data-theme='dark'] .collapseSidebarButton {
+        background-color: var(--collapse-button-bg-color-dark);
+    }
+
+    [data-theme='dark'] .collapseSidebarButton:hover,
+    [data-theme='dark'] .collapseSidebarButton:focus {
+        background-color: var(--ifm-color-emphasis-200);
+    }
+}
+
+.collapseSidebarButton {
+    display: none;
+}

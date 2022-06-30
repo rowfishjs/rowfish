@@ -1,0 +1,31 @@
+.page {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    will-change: transform;
+}
+
+.page > div {
+    touch-action: none;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+    will-change: transform;
+    box-shadow: 0 62.5px 125px -25px rgb(50 50 73 / 50%), 0 37.5px 75px -37.5px rgb(0 0 0 / 60%);
+}
+
+.container {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+}

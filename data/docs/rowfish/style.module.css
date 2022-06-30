@@ -1,0 +1,12 @@
+.banner {
+    @apply tw-w-full tw-h-64 tw-overflow-hidden tw-rounded-md tw-mb-3;
+
+    & > div,
+    & img {
+        @apply tw-rounded-md tw-w-full tw-h-full;
+    }
+
+    & img {
+        object-fit: fill;
+    }
+}

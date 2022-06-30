@@ -1,0 +1,9 @@
+.container {
+    @apply tw-flex-auto tw-flex-shrink-0 tw-flex
+      tw-justify-between tw-flex-wrap md:tw-flex-nowrap
+      tw-mt-4 tw-mb-6;
+}
+
+.block {
+    @apply tw-flex tw-flex-auto tw-flex-shrink-0 tw-flex-col;
+}

@@ -1,0 +1,93 @@
+:root {
+    /* 字体 */
+    font-size: 100%;
+
+    --ifm-font-size-base: 0.875rem;
+    --ifm-font-family-base: 'Source Sans Pro', 'Hiragino Sans GB', 'Microsoft Yahei', simsun,
+        helvetica, arial, sans-serif, monospace;
+    --font-family-kaiti: '楷体', 'STKaiti', 'Source Sans Pro', 'Hiragino Sans GB', 'Microsoft Yahei',
+        simsun, helvetica, arial, sans-serif, monospace;
+    --font-family-firacode: 'Fira Code', 'Source Sans Pro', 'Hiragino Sans GB', 'Microsoft Yahei',
+        simsun, helvetica, arial, sans-serif, monospace;
+
+    /* 定位 */
+    --ifm-navbar-sidebar-width: 60vw;
+    --ifm-menu-link-padding-vertical: 0.5rem;
+    --ifm-navbar-height: 2.6rem;
+    --ifm-navbar-padding-vertical: 0;
+    --doc-sidebar-hidden-width: 12px !important;
+    --ifm-transition-middle: 300ms;
+    --ifm-code-font-size: 95%;
+    --doc-sidebar-width: 15rem !important;
+    --ifm-alert-padding-vertical: 8px;
+    --ifm-alert-padding-horizontal: 20px;
+    --ifm-alert-border-radius: 0 5px 5px 0;
+    --ifm-alert-border-left-width: 3px;
+    --ifm-link-hover-decoration: none;
+    --ifm-z-index-fixed: 200;
+    --rf-base-modal-z-index: calc(var(--ifm-z-index-fixed) + 1);
+    --rf-dock-modal-z-index: calc(var(--rf-base-modal-z-index) + 100);
+
+    /* 色系 */
+    --ifm-color-primary: #c0c239;
+    --ifm-color-primary-dark: #a0a130;
+    --ifm-color-primary-darker: #7c8122;
+    --ifm-color-primary-darkest: #5a7010;
+    --ifm-color-primary-light: #a5d742;
+    --ifm-color-primary-lighter: #b8e478;
+    --ifm-color-primary-lightest: #f1faca;
+    --ifm-background-color: rgb(228 246 204 / 20%) !important;
+    --ifm-font-color-small: rgb(144 141 141);
+    --ifm-font-color-base: rgb(114 114 111);
+    --ifm-heading-color: rgb(78 73 73);
+    --ifm-link-color: rgb(77 72 72);
+    --ifm-link-hover-color: rgb(16 14 14);
+    --ifm-navbar-background-color: rgb(255 250 243 / 90%);
+    --ifm-dropdown-background-color: var(--ifm-navbar-background-color);
+    --ifm-navbar-link-color: var(--ifm-link-color);
+    --ifm-navbar-link-hover-color: var(--ifm-color-primary-darker);
+    --ifm-navbar-search-input-color: rgb(0 0 0);
+    --ifm-navbar-search-input-placeholder-color: var(--ifm-font-color-small);
+    --ifm-navbar-search-input-background-color: rgb(188 188 188 / 50%);
+    --ifm-tabs-color: var(--ifm-font-color-base);
+    --ifm-menu-color-active: var(--ifm-navbar-link-hover-color);
+    --ifm-card-background-color: var(--rf-panel-background-color);
+    --ifm-color-warning-contrast-background: #fcf2e9;
+    --rf-panel-background-color: rgb(255 240 223 / 80%);
+    --rf-blog-background-color: rgb(255 247 237/ 30%);
+    --rf-doc-background-color: rgb(241 230 217 / 80%);
+    --rf-link-background-color: rgb(241 230 217 / 98%);
+    --rf-dock-background-color: rgb(216 213 209 / 50%);
+    --rf-doc-main-bg-color: rgb(255 250 243 / 50%);
+    --rf-dock-btn-color: rgb(42 44 42 / 80%);
+    --waline-text-color: var(--ifm-font-color-base) !important;
+    --waline-info-color: var(--ifm-font-color-base) !important;
+    --waline-light-grey: var(--ifm-font-color-base) !important;
+    --waline-dark-grey: var(--ifm-font-color-base) !important;
+    --waline-bgcolor: var(--rf-panel-background-color) !important;
+    --waline-bgcolor-light: var(--rf-panel-background-color) !important;
+    --sidebar-bg-color: var(--ifm-navbar-background-color);
+    --sidebar-dark-bg-color: rgb(23 23 26 / 80%);
+    --main-dark-bg-color: rgb(35 35 36);
+    --docusaurus-tag-list-border: var(--ifm-color-emphasis-500) !important;
+}
+
+html[data-theme='dark'] {
+    --ifm-navbar-link-hover-color: var(--ifm-color-primary);
+    --ifm-font-color-small: rgb(196 187 187);
+    --ifm-font-color-base: rgb(216 207 207);
+    --ifm-link-color: rgb(239 230 230);
+    --ifm-link-hover-color: rgb(255 254 254);
+    --ifm-color-warning-contrast-background: rgb(0 0 0 / 80%);
+    --ifm-heading-color: rgb(241 231 231);
+    --ifm-navbar-background-color: rgb(17 24 39 / 90%);
+    --ifm-background-color: rgb(170 170 170 / 30%) !important;
+    --ifm-navbar-search-input-background-color: rgb(138 138 138 / 50%);
+    --rf-dock-background-color: var(--ifm-navbar-background-color);
+    --rf-panel-background-color: rgb(34 34 34 / 35%);
+    --rf-blog-background-color: rgb(23 23 26 / 70%);
+    --rf-doc-background-color: rgb(17 24 39 / 80%);
+    --rf-link-background-color: rgb(41 30 17 / 28%);
+    --rf-dock-btn-color: rgb(0 0 0 /50%);
+    --rf-doc-main-bg-color: rgb(23 23 26 / 65%);
+}

@@ -1,0 +1,175 @@
+.filterCheckbox {
+    justify-content: space-between;
+}
+
+.filterCheckbox,
+.checkboxList {
+    display: flex;
+    align-items: center;
+}
+
+.filterCheckbox > div:first-child {
+    display: flex;
+    flex: 1 1 auto;
+    align-items: center;
+}
+
+.filterCheckbox > div > * {
+    margin-right: 8px;
+    margin-bottom: 0;
+}
+
+.checkboxList {
+    flex-wrap: wrap;
+}
+
+.checkboxList,
+.workList {
+    padding: 0;
+    list-style: none;
+}
+
+.checkboxListItem {
+    height: 32px;
+    margin-top: 0.5rem;
+    margin-right: 0.5rem;
+    font-size: 0.8rem;
+    white-space: nowrap;
+    user-select: none;
+}
+
+.checkboxListItem:last-child {
+    margin-right: 0;
+}
+
+.workList {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 24px;
+}
+
+.workHeader {
+    display: flex;
+    align-items: center;
+}
+
+.workHeader > h2 {
+    margin-bottom: 0;
+}
+
+.workHeader > svg {
+    width: 30px;
+    height: 30px;
+}
+
+.workCard {
+    @apply tw-shadow-nymd hover:tw-shadow-spread  tw-pb-0 tw-rounded-md tw-transition-shadow tw-duration-300 tw-backdrop-blur-sm;
+}
+
+.cardImage {
+    height: 150px;
+    overflow: hidden;
+
+    /* border-bottom: 2px solid var(--ifm-color-emphasis-200); */
+}
+
+.cardImage > img {
+    width: 100%;
+    height: 100%;
+}
+
+.cardHeader {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.cardName {
+    flex: 1 1 auto;
+    margin-bottom: 0;
+}
+
+.cardName {
+    margin-right: 0.25rem;
+}
+
+.btn {
+    padding-right: 12px;
+    padding-left: 12px;
+    margin-left: 6px;
+    border: none;
+}
+
+.demoBtn:focus-visible {
+    background-color: var(--ifm-color-primary-dark);
+}
+
+html[data-theme='dark'] .demoBtn {
+    color: inherit;
+
+    @apply !tw-bg-emerald-800;
+}
+
+html[data-theme='dark'] .demoBtn:hover {
+    @apply !tw-bg-emerald-700;
+}
+
+.sourceBtn:focus-visible {
+    background-color: var(--ifm-color-secondary-dark);
+}
+
+html[data-theme='dark'] .sourceBtn {
+    color: inherit;
+    background-color: var(--ifm-color-emphasis-200) !important;
+}
+
+html[data-theme='dark'] .sourceBtn:hover {
+    background-color: var(--ifm-color-emphasis-300) !important;
+}
+
+.buyBtn:focus-visible {
+    @apply tw-bg-red-800;
+}
+
+html[data-theme='dark'] .buyBtn {
+    color: inherit;
+
+    @apply !tw-bg-amber-800;
+}
+
+html[data-theme='dark'] .buyBtn:hover {
+    @apply !tw-bg-amber-700;
+}
+
+.cardBody {
+    @apply tw-line-clamp-2 tw-break-all  tw-text-xs tw-leading-[1.125rem];
+}
+
+.cardFooter {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tag {
+    display: inline-flex;
+    align-items: center;
+    max-height: 3rem;
+    margin-right: 6px;
+    margin-bottom: 6px !important;
+    font-size: 0.675rem;
+    cursor: default;
+    border: 1px solid var(--ifm-color-secondary-darkest);
+    border-radius: 12px;
+}
+
+.tag .textLabel {
+    margin-left: 8px;
+}
+
+.tag .colorLabel {
+    width: 7px;
+    height: 7px;
+    margin-right: 6px;
+    margin-left: 6px;
+    border-radius: 50%;
+}

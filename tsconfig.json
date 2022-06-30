@@ -1,0 +1,38 @@
+{
+    "extends": "@tsconfig/docusaurus/tsconfig.json",
+    "compilerOptions": {
+        "strict": true,
+        "jsx": "react",
+        "target": "ESNext",
+        "module": "esnext",
+        "lib": ["DOM", "DOM.Iterable", "ESNext"],
+        "moduleResolution": "Node",
+        "skipLibCheck": true,
+        "allowSyntheticDefaultImports": true,
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "noEmit": true,
+        "declaration": true,
+        "removeComments": true,
+        "experimentalDecorators": true,
+        "alwaysStrict": true,
+        "sourceMap": true,
+        "incremental": true,
+        "forceConsistentCasingInFileNames": true,
+        "esModuleInterop": true,
+        "noUnusedLocals": false,
+        "noImplicitReturns": true,
+        "noFallthroughCasesInSwitch": true,
+        "pretty": true,
+        "noImplicitAny": true,
+        "allowJs": false,
+        "suppressImplicitAnyIndexErrors": true,
+        "importsNotUsedAsValues": "remove",
+        "outDir": "./dist",
+        "baseUrl": ".",
+        "paths": {
+            "@site/*": ["./*"]
+        }
+    },
+    "include": ["./src", "./data/site", "./data/demo", "./typings"]
+}

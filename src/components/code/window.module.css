@@ -1,0 +1,92 @@
+.browserWindow {
+    @apply tw-flex tw-flex-col tw-mb-[var(--ifm-leading)];
+    box-shadow: var(--ifm-global-shadow-lw);
+}
+
+.browserWindowHeader {
+    @apply tw-flex tw-items-center tw-justify-between tw-p-[0.1rem_0.3rem_0.1rem_1rem] tw-bg-[color:var(--ifm-color-emphasis-200)]
+    tw-rounded-tl-[var(--ifm-global-radius)] tw-rounded-tr-[var(--ifm-global-radius)];
+
+    & > .headerRight {
+        @apply tw-flex tw-flex-none tw-justify-center;
+
+        & > span {
+            @apply tw-inline-flex tw-items-center tw-my-0 tw-mx-[0.3rem] tw-cursor-pointer;
+        }
+    }
+}
+
+.codeTitle {
+    @apply tw-flex-auto tw-mr-[3.75rem] tw-text-center tw-align-middle;
+}
+
+.row::after {
+    display: table;
+    clear: both;
+    content: '';
+}
+
+.buttons {
+    @apply tw-flex-none tw-w-[3.75rem] tw-whitespace-normal;
+}
+
+.right {
+    @apply tw-self-center tw-w-[10%];
+}
+
+.dot {
+    @apply tw-inline-block tw-w-3 tw-h-3 tw-mt-1 tw-mr-[0.375rem] tw-bg-[color:#bbb] tw-rounded-[50%];
+}
+
+.browserWindowMenuIcon {
+    margin-left: auto;
+}
+
+.bar {
+    @apply tw-block tw-w-[1.0625rem] tw-h-[0.1875rem] tw-my-[0.1875rem] tw-mx-0 tw-bg-[#aaa];
+}
+
+.browserWindowBody {
+    @apply tw-flex-auto tw-border-[3px] tw-border-[color:var(--ifm-color-emphasis-200)] tw-border-t-0;
+}
+
+:global(.blog) .browserWindowBody {
+    @apply tw-border-r-2 tw-border-b-2;
+}
+
+html[data-theme='dark'] {
+    :global(.blog) .browserWindowBody {
+        @apply tw-border-r-[3px] tw-border-b-[3px];
+    }
+}
+
+/* html[data-theme='light'] {
+    --ifm-background-color: #fff;
+}
+
+.browserWindowAddressBar {
+    flex: 1 0;
+    padding: 5px 15px;
+    margin: 0 1rem 0 0.5rem;
+    font: 400 13px 'Arial', sans-serif;
+    color: var(--ifm-color-gray-800);
+    user-select: none;
+    background-color: var(--ifm-background-color);
+    border-radius: 12.5px;
+}
+
+html[data-theme='dark'] .browserWindowAddressBar {
+    color: var(--ifm-color-gray-300);
+}
+.browserFooter {
+  display: flex;
+  justify-content: center;
+  flex: none;
+  width: 100%;
+  padding-bottom: 0.5rem;
+} 
+
+.browserFooter > span {
+    margin: 0 0.5rem;
+    cursor: pointer;
+}  */

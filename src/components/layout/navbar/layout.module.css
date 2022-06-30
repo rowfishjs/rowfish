@@ -1,0 +1,30 @@
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+.navbarHideable {
+    transition: transform var(--ifm-transition-fast) ease;
+}
+
+.navbarHidden {
+    transform: translate3d(0, calc(-100% - 2px), 0);
+}
+
+:global {
+    .navbar__item,
+    .menu__link {
+        & > span {
+            display: inline-flex;
+        }
+    }
+
+    .navbar__link:hover,
+    .navbar__link--active {
+        &::before {
+            background-color: var(--ifm-navbar-link-hover-color);
+        }
+    }
+}

@@ -1,0 +1,22 @@
+.excerpt {
+    @apply tw-flex tw-w-full md:tw-items-center md:tw-flex-wrap md:tw-flex-row tw-flex-col tw-items-start;
+
+    /* after:tw-content-center after:tw-w-full after:tw-h-2 after:tw-border-b-[1px]  after:tw-border-dashed after:tw-mt-0; */
+}
+
+.meta {
+    @apply tw-flex tw-items-center tw-mr-3;
+
+    &:last-child {
+        @apply tw-mr-0;
+    }
+
+    & > span:last-child,
+    & > time {
+        @apply sm:tw-max-w-[8rem] tw-max-w-[5rem];
+    }
+
+    & > .icon {
+        @apply tw--mt-[0.05rem] tw-mr-1 tw-inline-flex tw-items-center;
+    }
+}

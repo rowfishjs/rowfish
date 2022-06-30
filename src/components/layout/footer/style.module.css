@@ -1,0 +1,53 @@
+.container {
+    @apply tw-w-full tw-flex tw-items-center tw-justify-center tw-mb-3;
+
+    & > .btn {
+        @apply tw-flex tw-py-1 tw-mr-2 tw-flex-col md:tw-flex-row;
+
+        & > span,
+        & > a {
+            @apply tw-px-2 tw-py-1 tw-text-white  tw-text-xs tw-inline-flex tw-items-center tw-backdrop-blur-md;
+        }
+
+        & > *:first-child {
+            @apply tw-text-white/80 tw-rounded-l-sm tw-border-none md:tw-border-r-[1px] md:tw-border-slate-300;
+        }
+
+        & > *:last-child {
+            @apply tw-rounded-r-sm;
+        }
+    }
+
+    /* & > .copyright {
+        @apply tw-text-white;
+        text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
+        -webkit-text-stroke: 0.2px black;
+        -webkit-text-fill-color: white;
+    } */
+
+    & > .copyright {
+        & > span {
+            @apply first:tw-bg-neutral-800/50 last:tw-bg-emerald-500/50;
+        }
+    }
+
+    & > .themeby {
+        & > span {
+            @apply tw-bg-slate-700/50;
+        }
+
+        & > a {
+            @apply tw-bg-blue-500/50;
+        }
+    }
+
+    & > .beian {
+        & > span {
+            @apply tw-bg-green-900/50;
+        }
+
+        & > a {
+            @apply tw-bg-amber-500/50;
+        }
+    }
+}

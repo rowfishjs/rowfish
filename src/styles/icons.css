@@ -1,0 +1,63 @@
+.home-icon::before {
+    mask-image: url('/images/icons/home.svg');
+}
+
+.book-icon::before {
+    mask-image: url('/images/icons/book.svg');
+}
+
+.basic-icon::before {
+    mask-image: url('/images/icons/basic.svg');
+}
+
+.video-icon::before {
+    mask-image: url('/images/icons/video.svg');
+}
+
+.translate-icon::before {
+    mask-image: url('/images/icons/translate.svg');
+}
+
+.download-icon::before {
+    mask-image: url('/images/icons/download.svg');
+}
+
+.coffee-icon::before {
+    mask-image: url('/images/icons/coffee.svg');
+}
+
+.course-icon::before {
+    mask-image: url('/images/icons/course.svg');
+}
+
+.qa-icon::before {
+    mask-image: url('/images/icons/comments.svg');
+}
+
+.doc-icon::before {
+    mask-image: url('/images/icons/doc.svg');
+}
+
+.links-icon::before {
+    mask-image: url('/images/icons/links.svg');
+}
+
+.gitea-icon::before {
+    mask-image: url('/images/icons/gitea.svg');
+}
+
+.cloud-icon::before {
+    mask-image: url('/images/icons/cloud.svg');
+}
+
+.works-icon::before {
+    mask-image: url('/images/icons/works.svg');
+}
+
+.about-icon::before {
+    mask-image: url('/images/icons/about.svg');
+}
+
+.yargs-icon::before {
+    background-image: url('/images/icons/react-router.png');
+}

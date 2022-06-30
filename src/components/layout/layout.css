@@ -1,0 +1,38 @@
+/* html,
+body {
+    height: 100%;
+} */
+
+/* #__docusaurus {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+} */
+
+/* stylelint-disable-next-line selector-id-pattern */
+#__docusaurus {
+    @apply tw-flex tw-flex-col tw-min-h-full;
+}
+
+.main-layout {
+    @apply tw-flex-auto tw-flex tw-flex-col tw-bg-fixed tw-bg-no-repeat tw-bg-center tw-bg-cover;
+}
+
+.main-wrapper {
+    @apply tw-flex-auto tw-flex-shrink-0 tw-flex tw-justify-center tw-flex-col tw-min-h-[calc(100vh_-_var(--ifm-navbar-height))];
+
+    & > div,
+    & > main {
+        @apply tw-flex-auto;
+    }
+
+    & > footer {
+        @apply tw-flex-none;
+    }
+}
+
+/* Docusaurus-specific utility classes */
+
+.docusaurus-mt-lg {
+    margin-top: 3rem;
+}

@@ -1,0 +1,25 @@
+.list {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.list > div {
+    position: absolute;
+    will-change: transform, width, height, opacity;
+    padding: 15px;
+}
+
+.list > div > div {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-size: 10px;
+    line-height: 10px;
+    text-transform: uppercase;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 4px;
+    box-shadow: 0 10px 50px -10px rgb(0 0 0 / 20%);
+}

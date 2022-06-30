@@ -1,0 +1,53 @@
+/* 添加自定义tailwind组件层样式,一般无特殊需求可以用react组件抽象而不是在这里定义css类 */
+
+/* 如果要引用tailwind自带的值或tailwind.config.js的theme中配置的值,可以通过 "@apply"指令或"theme"函数获取 */
+
+/* 在"@layer"中添加的样式如果在程序中没有用到会在编译后被清除,如果需要强制存在于编译后的样式表,请在"@layer"外定义 */
+
+/* 示例:
+.btn-primary {
+    @apply px-4 py-2 font-semibold text-white bg-blue-500 rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75;
+} */
+
+@layer components {
+    .tw-container {
+        @apply 2xl:tw-max-w-[90rem] xl:tw-max-w-[75rem] lg:tw-max-w-[62rem] md:tw-max-w-full;
+    }
+
+    .tw-ghostBtn {
+        @apply tw-py-1 tw-px-2 tw-inline-flex tw-justify-between tw-delay-100 tw-rounded-sm tw-shadow-nymd tw-transition-shadow tw-duration-200
+        tw-bg-white/50 dark:tw-bg-black/50 tw-text-black dark:tw-text-white 
+       hover:tw-shadow-spread hover:tw-shadow-amber-600 hover:tw-bg-amber-600 dark:hover:tw-bg-amber-600 hover:tw-text-white;
+
+        /* hover:tw-shadow-lg hover:tw-bg-amber-300 dark:hover:tw-bg-amber-600; */
+
+        /* tw-bg-white/70 dark:tw-bg-black/70 tw-text-black dark:tw-text-white tw-border-amber-50 dark:tw-border-amber-900 tw-shadow-amber-500 dark:tw-shadow-amber-600
+      hover:tw-border-amber-300 dark:hover:tw-border-amber-600 hover:tw-shadow-lg hover:tw-bg-amber-300 dark:hover:tw-bg-amber-600; */
+
+        & > span {
+            @apply tw-inline-flex tw-items-center tw-justify-center;
+        }
+
+        & > .tw-ghost-icon {
+            @apply tw-justify-start tw-px-2 tw--ml-2 tw--mt-[0.05rem];
+        }
+
+        & > .tw-ghost-icon-right {
+            @apply tw-ml-0 tw--mr-2;
+        }
+    }
+
+    .tw-ghostEmptyBtn {
+        @apply tw-ghostBtn !tw-bg-[color:rgb(0_0_0_/_0)] tw-text-[color:var(--ifm-link-color)] hover:tw-text-[color:var(--ifm-link-hover-color)] tw-shadow-none tw-border-[1px] hover:tw-shadow-nylg
+        tw-border-lime-400  hover:tw-shadow-lime-400 dark:tw-border-lime-600  dark:hover:tw-shadow-lime-600;
+    }
+
+    .tw-panel {
+        @apply tw-flex tw-shadow-nymd tw-rounded-sm tw-bg-[color:var(--rf-panel-background-color)] tw-backdrop-blur-[3px];
+    }
+
+    .tw-card {
+        @apply tw-flex tw-p-4 tw-rounded-md tw-bg-[color:var(--rf-panel-background-color)] hover:tw-shadow-lg tw-border-[0.0625rem]  tw-border-[color:rgb(231_234_243/70%)] dark:tw-border-none;
+        transition: box-shadow 0.25s ease;
+    }
+}

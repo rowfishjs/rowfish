@@ -1,0 +1,97 @@
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+.modal {
+    @apply tw-fixed tw-z-[var(--rf-base-modal-z-index)] tw-w-full tw-h-screen tw-top-0 tw-left-0 tw-bg-white/40;
+}
+
+.container {
+    @apply lg:tw-py-3 lg:tw-pl-1 lg:tw-bg-[color:var(--rf-panel-background-color)] lg:tw-rounded-none
+    tw-w-full tw-flex-col tw-bg-zinc-100/80 tw-shadow-md tw-rounded-tl-md tw-rounded-bl-md tw-py-2;
+}
+
+.mobileWrapper {
+    --translate-x: 0;
+    --control-rotate: rotate(0);
+
+    @apply tw-fixed tw-w-[60%]  tw-z-[calc(var(--rf-base-modal-z-index)+1)] tw-top-[30%] tw-flex tw-items-center tw-right-0 tw-transition-transform 
+    lg:tw-hidden tw-translate-x-[var(--translate-x)];
+
+    & > .mobileBtn {
+        @apply lg:tw-hidden tw-text-2xl tw-text-black tw-items-center tw-flex tw-justify-center  tw-mr-1 tw--mt-10 tw-transition-transform tw-duration-200 tw-delay-150 tw-ease-in-out;
+        transform: var(--control-rotate);
+
+        & svg {
+            filter: drop-shadow(1px 2px 1px rgb(0 0 0 / 60%));
+        }
+    }
+}
+
+.defaultTableOfContents {
+    position: sticky;
+    top: calc(var(--ifm-navbar-height) + 1rem);
+    max-height: calc(100vh - (var(--ifm-navbar-height) + 2rem));
+    overflow-y: auto;
+}
+
+.tableOfContents {
+    @apply tw-max-h-80 tw-overflow-y-auto tw-flex-auto tw-px-3;
+    direction: rtl;
+
+    @screen lg {
+        direction: ltr;
+    }
+
+    & > :global(.table-of-contents__left-border) {
+        border: none;
+    }
+
+    & > :global(.table-of-contents) {
+        padding-top: 0;
+        padding-left: 0;
+        direction: ltr;
+
+        & > li:first-child {
+            margin-top: 0;
+        }
+
+        & > li:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    & li {
+        @apply tw-mx-0;
+    }
+}
+
+@media (max-width: 996px) {
+    .defaultTableOfContents {
+        display: none;
+
+        & .docItemContainer {
+            padding: 0 0.3rem;
+        }
+    }
+}
+
+html[data-theme='dark'] {
+    .modal {
+        @apply tw-bg-black/50;
+    }
+
+    .container {
+        @apply tw-bg-black/10 tw-shadow-lime-50/20 lg:tw-bg-[color:var(--rf-panel-background-color)] lg:tw-shadow-none;
+    }
+
+    .mobileBtn {
+        @apply tw-text-white;
+
+        & svg {
+            filter: drop-shadow(1px 2px 1px rgb(144 130 130 / 40%));
+        }
+    }
+}
