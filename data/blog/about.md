@@ -66,7 +66,7 @@ import TabItem from '@theme/TabItem';
 [jquery]:https://jquery.com/
 [ci]:https://www.codeigniter.com/
 [electron]:https://www.electronjs.org/
-[rowfish]: https://pincman.com/docs/rowfish/
+[rowfish]: https://pincman.com/rowfish
 [toome]: https://pincman.com/docs/toome/
 
 

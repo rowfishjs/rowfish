@@ -15,10 +15,10 @@ order: 0
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-[rowfish]: /docs/rowfish/overview
+[rowfish]: /rowfish
 [discussions]: https://github.com/rowfishjs/rowfish/discussions
 [issue]: https://github.com/rowfishjs/rowfish/issues
-[usage]: https://pincman.com/docs/rowfish/
+[usage]: https://pincman.com/docs/rowfish/overview
 [pro]: /docs/rowfish/pro
 [pincman]: https://pincman.com/
 [docusaurus]: https://docusaurus.io
@@ -207,10 +207,10 @@ import TabItem from '@theme/TabItem';
 <Tabs lazy>
     <TabItem value="vip" label=" 🐳 Rowfish" default>
         <p>
-            <a href="/docs/rowfish">Rowfish</a>是基于<a href="https://docusaurus.io/" target="_blank">Docusaurus</a>的开发的主题。
+            <a href="/rowfish">Rowfish</a>是基于<a href="https://docusaurus.io/" target="_blank">Docusaurus</a>的开发的主题。
             因为<a href="https://docusaurus.io/" target="_blank">Docusaurus</a>本身是使用<a href="https://zh-hans.reactjs.org/" target="_blank">React</a>编写的用来构建静态博客和文档系统的，
-            所以 <a href="/docs/rowfish">Rowfish</a>只是在其之上进行扩展，其原本功能与<a href="https://docusaurus.io/" target="_blank">Docusaurus</a>一致。
-            需要注意的是， <a href="/docs/rowfish">Rowfish</a>的样式全部使用 <a href="https://tailwindcss.com/" target="_blank">TailwindCSS</a>编写，并没有用到任何如<a href="https://ant.design/index-cn" target="_blank">Antd</a>这类UI库，
+            所以 <a href="/rowfish">Rowfish</a>只是在其之上进行扩展，其原本功能与<a href="https://docusaurus.io/" target="_blank">Docusaurus</a>一致。
+            需要注意的是， <a href="/rowfish">Rowfish</a>的样式全部使用 <a href="https://tailwindcss.com/" target="_blank">TailwindCSS</a>编写，并没有用到任何如<a href="https://ant.design/index-cn" target="_blank">Antd</a>这类UI库，
             所以很容易进行改动，十分轻量。
         </p>
     </TabItem>
