@@ -67,7 +67,7 @@ const navbarItems = [
 module.exports = {
     site: {
         title: '平克小站',
-        tagline: '全栈开发笔记',
+        tagline: '最好的全栈开发学习网站',
         url: 'https://pincman.com',
         baseUrl: '/',
         onBrokenLinks: 'throw',

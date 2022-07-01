@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React, { FC, useState } from 'react';
 import clsx from 'clsx';
 
 import type { Props } from '@theme/BlogLayout';
@@ -8,6 +8,12 @@ import BrowserOnly from '@docusaurus/BrowserOnly';
 import BackToTopButton from '@theme/BackToTopButton';
 
 import { tips, dockItems } from '@site/data/site';
+
+import { usePluginData } from '@docusaurus/useGlobalData';
+
+import { useDeepCompareEffect } from 'ahooks';
+
+import { isNil } from 'lodash-es';
 
 import { Layout, LayoutProps } from '../layout';
 
@@ -22,8 +28,15 @@ import { BlogMobileTags } from './widgets/mobileTags';
 
 export const BlogLayout: FC<Props & LayoutProps> = (props) => {
     const { sidebar, toc, children, ...layoutProps } = props;
+    const globalData = usePluginData('docusaurus-plugin-content-blog', 'default') as any;
+    const [title, setTitle] = useState<string | undefined>(undefined);
+    useDeepCompareEffect(() => {
+        if (!isNil(globalData) && !isNil(globalData.title)) setTitle(globalData.title);
+    }, [globalData]);
+
     return (
         <Layout
+            title={title}
             className="tw-bg-[url(/images/pages/site-bg.webp)] dark:tw-bg-[url(/images/pages/site-dark-bg.webp)]"
             footer
             footerClass="tw-bg-[color:var(--rf-blog-background-color)]"

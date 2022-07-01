@@ -24,7 +24,11 @@ module.exports = [
                 const { actions, content } = contentLoadedArgs[0];
                 const { setGlobalData } = actions;
                 const { blogTags } = content;
-                setGlobalData({ tags: blogTags, route: configure.blog.routeBasePath });
+                setGlobalData({
+                    tags: blogTags,
+                    route: configure.blog.routeBasePath,
+                    title: configure.site.tagline,
+                });
             },
         };
     },
