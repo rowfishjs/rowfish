@@ -14,8 +14,7 @@ module.exports = [
         const blogPluginInstance = await BlogPlugin(context, {
             ...DefaultBlogOptions,
             ...options,
-            routeBasePath: configure.blog.route,
-            path: configure.blog.path,
+            ...configure.blog,
         });
 
         return {
@@ -25,7 +24,7 @@ module.exports = [
                 const { actions, content } = contentLoadedArgs[0];
                 const { setGlobalData } = actions;
                 const { blogTags } = content;
-                setGlobalData({ tags: blogTags, route: configure.blog.route });
+                setGlobalData({ tags: blogTags, route: configure.blog.routeBasePath });
             },
         };
     },

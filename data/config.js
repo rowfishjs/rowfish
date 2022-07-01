@@ -82,13 +82,16 @@ module.exports = {
             srcDark: 'custom/logo-dark.png',
         },
     },
+    /** @type {import('@docusaurus/plugin-content-docs').PluginOptions} */
     docs: {
         path: './data/docs',
-        route: '/docs',
+        routeBasePath: '/docs',
     },
+    /** @type {import('@docusaurus/plugin-content-blog').PluginOptions} */
     blog: {
         path: './data/blog',
-        route: '/',
+        routeBasePath: '/',
+        postsPerPage: 8,
     },
     sidebars,
     navbarItems,

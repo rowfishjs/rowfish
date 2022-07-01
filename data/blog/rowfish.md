@@ -14,6 +14,7 @@ order: 0
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
+import Image from '@theme/IdealImage';
 
 [rowfish]: /rowfish
 [discussions]: https://github.com/rowfishjs/rowfish/discussions
@@ -78,9 +79,11 @@ import TabItem from '@theme/TabItem';
 
 :::
 
-#### 🐳 主站
+#### 🐳 Rowfish
 
-#### 🐬 Pro子系统
+#### 🐬 Pro
+<a href="https://pic.pincman.com/media/202207011647835.png" target="_blank" style={{ display: 'block',marginBottom: '1rem' }}>点此查看大图</a>
+<Image img="https://pic.pincman.com/media/202207011647835.png" />
 
 ### 🌾功能列表
 

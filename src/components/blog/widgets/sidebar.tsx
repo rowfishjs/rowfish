@@ -39,7 +39,13 @@ const BLogSidebarOwner: FC = () => {
         </div>
     );
 };
-
+const BlogSidebarRecentItem: FC<PostItem> = ({ title, permalink }) => {
+    return (
+        <Link className="tw-ellips tw-animate-decoration" href={permalink}>
+            <span>{title}</span>
+        </Link>
+    );
+};
 const BlogSidebarRecent: FC<{ posts: PostItem[] }> = ({ posts }) => {
     return (
         <div className={clsx('blogBlock', $styles.posts)}>
@@ -53,16 +59,7 @@ const BlogSidebarRecent: FC<{ posts: PostItem[] }> = ({ posts }) => {
             </div>
             <div className={$styles.postsContent}>
                 {posts.map(
-                    ({ title, permalink }, i) =>
-                        i < 5 && (
-                            <Link
-                                className="tw-ellips tw-animate-decoration"
-                                href={permalink}
-                                key={i.toFixed()}
-                            >
-                                <span>{title}</span>
-                            </Link>
-                        ),
+                    (item, i) => i < 5 && <BlogSidebarRecentItem {...item} key={i.toFixed()} />,
                 )}
             </div>
         </div>

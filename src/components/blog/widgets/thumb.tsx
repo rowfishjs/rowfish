@@ -122,7 +122,13 @@ export const BlogThumb: FC<Props> = (props) => {
                     <>
                         <div className={styles.content}>
                             {!isNil(summary) ? (
-                                summary
+                                <div
+                                    className={styles.content}
+                                    // eslint-disable-next-line react/no-danger
+                                    dangerouslySetInnerHTML={{
+                                        __html: summary,
+                                    }}
+                                />
                             ) : (
                                 <div className="markdown" itemProp="articleBody">
                                     <MDXContent>{children}</MDXContent>
