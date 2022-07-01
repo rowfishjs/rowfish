@@ -83,7 +83,10 @@ import Image from '@theme/IdealImage';
 
 ::;info
 
-因为[rowfish][rowfish]是静态站，没有后台和付费等功能，所以预览直接看[本站](https://pincman.com)即可，无需简览
+因为[rowfish][rowfish]是静态站，没有后台和付费等功能，所以预览直接看[本站](https://pincman.com)即可，无需简览,随便搞了张缩略图看一下
+
+<a href="https://pic.pincman.com/media/202207012135423.png" target="_blank" style={{ display: 'block',marginBottom: '1rem' }}>点此查看大图</a>
+<Image img="https://pic.pincman.com/media/202207012135423.png" />
 
 :::
 
