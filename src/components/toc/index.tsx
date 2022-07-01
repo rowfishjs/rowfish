@@ -2,7 +2,6 @@ import React, { FC, forwardRef, useCallback, useEffect, useMemo, useRef, useStat
 import type { Props } from '@theme/TOC';
 import clsx from 'clsx';
 import TOCItems from '@theme/TOCItems';
-import ReactDOM from 'react-dom';
 import TOCIcon from '@ricons/material/ArticleRound';
 import ControlIcon from '@ricons/fluent/ReadingList16Regular';
 import { useDebounceEffect, useDeepCompareEffect, useResponsive } from 'ahooks';
@@ -63,8 +62,7 @@ const TocMobileBlock: FC<Props & { show: boolean; toggle: () => void }> = ({
             setX(rect.width);
         }
     }, [ref.current, resp]);
-    if (!ExecutionEnvironment.canUseDOM) return null;
-    return ReactDOM.createPortal(
+    return (
         <div className={$styles.mobileWrapper} style={style}>
             <div className={$styles.mobileBtn} onClick={toggle}>
                 <span className="xicon">
@@ -72,17 +70,21 @@ const TocMobileBlock: FC<Props & { show: boolean; toggle: () => void }> = ({
                 </span>
             </div>
             <TocBlock ref={ref} {...props} />
-        </div>,
-        document.body,
+        </div>
     );
+    // if (!ExecutionEnvironment.canUseDOM) return null;
+    // return ReactDOM.createPortal(
+
+    //     document.body,
+    // );
 };
 
 export const TOC: FC<Props> = ({ className, ...props }) => {
     // const windowSize = useWindowSize();
     // const renderTocDesktop = windowSize === 'desktop' || windowSize === 'ssr';
-    const [modal, setModal] = useState(() =>
-        ExecutionEnvironment.canUseDOM ? document.createElement('div') : null,
-    );
+    // const [modal, setModal] = useState(() =>
+    //     ExecutionEnvironment.canUseDOM ? document.createElement('div') : null,
+    // );
     const [show, setShow] = useState<boolean>(false);
     const [isBlog, setIsBlog] = useState<boolean>(false);
     const responsive = useResponsive();
@@ -90,26 +92,26 @@ export const TOC: FC<Props> = ({ className, ...props }) => {
     const context = useRouteContext();
     const isLg = ExecutionEnvironment.canUseDOM && responsive.lg;
     useDebounceEffect(() => setShow(false), [isLg], { wait: 10 });
-    useEffect(() => {
-        setModal(() => {
-            if (!ExecutionEnvironment.canUseDOM) return null;
-            modal!.style.display = show ? 'block' : 'none';
-            return modal;
-        });
-    }, [show]);
-    useEffect(() => {
-        if (ExecutionEnvironment.canUseDOM && modal) {
-            if (!modal.classList.contains($styles.modal)) modal.classList.add($styles.modal);
-            modal.style.display = 'none';
-            document.body.appendChild(modal);
-        }
+    // useEffect(() => {
+    //     setModal(() => {
+    //         if (!ExecutionEnvironment.canUseDOM) return null;
+    //         modal!.style.display = show ? 'block' : 'none';
+    //         return modal;
+    //     });
+    // }, [show]);
+    // useEffect(() => {
+    //     if (ExecutionEnvironment.canUseDOM && modal) {
+    //         if (!modal.classList.contains($styles.modal)) modal.classList.add($styles.modal);
+    //         modal.style.display = 'none';
+    //         document.body.appendChild(modal);
+    //     }
 
-        return () => {
-            if (ExecutionEnvironment.canUseDOM && modal) {
-                document.body.removeChild(modal);
-            }
-        };
-    }, []);
+    //     return () => {
+    //         if (ExecutionEnvironment.canUseDOM && modal) {
+    //             document.body.removeChild(modal);
+    //         }
+    //     };
+    // }, []);
     useEffect(() => {
         setIsBlog(context.plugin.name === 'docusaurus-plugin-content-blog');
     }, [context]);

@@ -36,7 +36,7 @@
     }
 
     & > .controlBtn {
-        @apply tw-text-2xl tw-text-black tw-transition-transform tw-mb-4 tw-self-end tw-mr-4 md:tw-hidden;
+        @apply tw-text-2xl tw-text-black tw-transition-transform tw-mb-4 tw-self-end tw-mr-4 lg:tw-hidden;
         display: var(--control-display);
 
         @screen lg {
@@ -90,7 +90,7 @@
     }
 }
 
-@screen md {
+@screen lg {
     .dockBtn {
         box-shadow: -10px 0 15px -3px rgb(0 0 0 / 20%), -4px 0 6px -4px rgb(0 0 0 / 20%);
     }
