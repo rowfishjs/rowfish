@@ -1,17 +1,3 @@
----
-slug: rowfish
-title: RowFish -- 开源一款比较好看的docusaurus主题
-type: image
-image: https://pic.pincman.com/media/202206301202195.png?imageMogr2/format/webp
-authors: [pincman]
-rf_summary: 用于构建知识分享及知识付费的博客系统<br />为计算机从业者提升个人求职竞争力或从事网络授课/自媒体等作为副业而打造！
-rf_banner: true
-rf_noloop: true
-rf_comment: false
-rf_excerpt: false
-order: 0
----
-
 [rowfish]:https://pincman.com/rowfish
 [source]: https://github.com/rowfishjs/rowfish
 [pincman ]: https://pincman.com
@@ -50,7 +36,7 @@ order: 0
 [pro-qq-group]: https://qm.qq.com/cgi-bin/qm/qr?k=8eLi_sZAEXR4WOd3xNqI058aOviOXLHU&jump_from=webapi/
 
 ![](https://pic.pincman.com/media/202206301202195.png?imageMogr2/format/webp)
->   [Rowfish][rowfish]是一套用于构建个人文档库，作品展示和博客系统的[Docusaurus][docusaurus]主题，**主题基于MIT协议完全开源**，专为计算机从业者提升个人求职竞争力或于宁自媒体等而打造！ 🐳
+>   [Rowfish][rowfish]是一套用于构建个人文档库，作品展示和博客系统的[Docusaurus][docusaurus]主题，**主题基于[MIT license](https://opensource.org/licenses/MIT)协议完全开源**，专为计算机从业者提升个人求职竞争力或于宁自媒体等而打造！ 🐳
 
 ## 🚀缘起
 
@@ -70,7 +56,7 @@ order: 0
 
 >   目前完美匹配移动端，且暗黑模式下效果更佳
 
-效果可以查看**[演示站点][pincman]**
+效果可以查看[演示站点][pincman]
 
 给张图，如下
 ![](https://pic.pincman.com/media/202207012135423.png)
@@ -91,26 +77,15 @@ order: 0
 
 [Rowfish][rowfish]本身是用于日常的知识分享及个人展示，不具备商业营运能力。而[Rowfish Pro][pro]作为一个子系统存在，用于搭建知识付费和在线网课站点。
 
-:::caution
+>   [Pro][pro]是基于[wordpress][wordpress]构建的，需要懂一点[PHP][php]的部署知识。同时[Pro][pro]是一套[rizhuti][rizhuti]的子主题，如果对授权警告比较敏感，需要另行购买[rizhuti][rizhuti]授权来去除警告，不过不影响使用
 
-[Pro][pro]是基于[wordpress][wordpress]构建的，需要懂一点[PHP][php]的部署知识。同时[Pro][pro]是一套[rizhuti][rizhuti]的子主题，如果对授权警告比较敏感，需要另行购买[rizhuti][rizhuti]授权来去除警告，不过不影响使用
-
-:::
-
-可以参考**[Pro演示站点](https://v.pincman.com)**
+可以参考[Pro演示站点](https://v.pincman.com)
 
 正确以及推荐的使用方式应该以[Rowfish][rowfish]作为主站以[Rowfish pro][pro]作为子站来搭建
 
-:::note
+>   当然你也可以直接把[Pro][pro]作为主站而不用[Rowfish][rowfish]，因为[Pro][pro]自带[Rowfish][rowfish]的几乎所有功能，但是在样式设计，用户体验等方面站长原则上会把[Rowfish][rowfish]做为优先级
 
-当然你也可以直接把[Pro][pro]作为主站而不用[Rowfish][rowfish]，因为[Pro][pro]自带[Rowfish][rowfish]的几乎所有功能，但是在样式设计，用户体验等方面站长原则上会把[Rowfish][rowfish]做为优先级
-
-:::
-
-预览图
-
-<a href="https://pic.pincman.com/media/202207011647835.png" target="_blank" style={{ display: 'block',marginBottom: '1rem' }}>点此查看大图</a>
-![](https://pic.pincman.com/media/202207011647835.png)
+[点此查看大图](https://pic.pincman.com/media/202207011647835.png)![](https://pic.pincman.com/media/202207011647835.png)
 
 两者的功能对比如下
 
