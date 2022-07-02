@@ -1,0 +1,70 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    gap: 24px;
+    list-style: none;
+}
+
+.item {
+    @apply tw-relative tw-flex
+     after:tw-w-full after:tw-h-2/5 tw-h-56 after:tw-absolute after:tw-rounded-b-[4px]
+     after:tw-left-0 after:tw-bottom-0 tw-shadow-nymd hover:tw-shadow-spread 
+     tw-transition-shadow tw-rounded-[0.25rem];
+
+    &:hover {
+        & > .media img {
+            @apply tw-scale-125;
+        }
+    }
+
+    &::after {
+        background: linear-gradient(
+            180deg,
+            rgb(0 0 0 / 0%) 0%,
+            rgb(0 0 0 / 0%) 5%,
+            rgb(0 0 0 / 35%) 65%,
+            #000 100%
+        );
+    }
+
+    & > .media {
+        @apply tw-overflow-hidden tw-relative tw-h-full;
+
+        & > div {
+            @apply !tw-h-full;
+        }
+
+        & img {
+            @apply tw-w-full tw-overflow-hidden tw-transition-all tw-duration-300 !tw-h-full;
+        }
+    }
+
+    & > .icons {
+        @apply tw-absolute tw-px-[10px] tw-py-[2px] tw-flex tw-top-2 tw-cursor-pointer;
+
+        & > span {
+            @apply tw-text-xs tw-text-white tw-rounded-[10rem] tw-z-[1] tw-px-[0.4rem] tw-py-[0.1rem] tw-mr-1;
+        }
+
+        & > .icon > span {
+            @apply tw-mt-[0.15rem];
+        }
+    }
+}
+
+.content {
+    @apply tw-absolute tw-bottom-0 tw-left-0 tw-p-[10px] tw-z-[1]  tw-w-full tw-flex tw-flex-col tw-justify-between;
+
+    & > .title {
+        @apply tw-block;
+    }
+
+    & > .title > span {
+        @apply tw-text-white tw-text-sm tw-font-bold tw-inline-block tw-pb-[6px] tw-max-w-[60%] tw-mb-1
+         tw-bg-gradient-to-r tw-from-[currentColor_0%] tw-to-current tw-bg-no-repeat tw-bg-[left_top_87%] tw-bg-[length:0_3px] hover:tw-bg-[length:100%_3px] tw-transition-all tw-duration-300;
+    }
+
+    & > .description {
+        @apply tw-text-white/80 tw-max-w-[90%] tw-text-xs;
+    }
+}

@@ -1,0 +1,22 @@
+{
+  "0 debug pnpm:scope": {
+    "selected": 1
+  },
+  "1 error pnpm": {
+    "code": "ELIFECYCLE",
+    "errno": "ENOENT",
+    "syscall": "spawn",
+    "file": "sh",
+    "pkgid": "pincman@1.0.0",
+    "stage": "clear",
+    "script": "docusaurus clear",
+    "pkgname": "pincman",
+    "err": {
+      "name": "pnpm",
+      "message": "pincman@1.0.0 clear: `docusaurus clear`\nspawn ENOENT",
+      "code": "ELIFECYCLE",
+      "stack": "pnpm: pincman@1.0.0 clear: `docusaurus clear`\nspawn ENOENT\n    at ChildProcess.<anonymous> (/home/pincman/.local/share/pnpm/global/5/.pnpm/pnpm@7.4.0/node_modules/pnpm/dist/pnpm.cjs:95156:22)\n    at ChildProcess.emit (node:events:527:28)\n    at maybeClose (node:internal/child_process:1092:16)\n    at Process.ChildProcess._handle.onexit (node:internal/child_process:302:5)"
+    }
+  },
+  "2 warn pnpm:global": " Local package.json exists, but node_modules missing, did you mean to install?"
+}

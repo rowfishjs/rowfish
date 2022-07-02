@@ -1,0 +1,47 @@
+.playgroundContainer {
+    @apply tw-flex;
+
+    & > div {
+        @apply tw-flex-auto tw-max-w-[50%] !tw-overflow-auto;
+    }
+
+    & > div:first-child {
+        max-height: var(--max-height, 25rem);
+    }
+
+    & > div:last-child {
+        @apply tw-items-center tw-justify-center tw-p-0;
+        height: var(--height, auto);
+        max-height: var(--max-height, 25rem);
+    }
+}
+
+.playgroundHeader {
+    padding: 0.75rem;
+    font-size: var(--ifm-code-font-size);
+    font-weight: bold;
+    color: var(--ifm-color-content);
+    text-transform: uppercase;
+    letter-spacing: 0.08rem;
+    background: var(--ifm-color-emphasis-200);
+}
+
+.playgroundHeader:first-of-type {
+    color: var(--ifm-color-content-inverse);
+    background: var(--ifm-color-emphasis-600);
+}
+
+.playgroundEditor {
+    font: var(--ifm-code-font-size) / var(--ifm-pre-line-height) var(--ifm-font-family-monospace) !important;
+
+    /* rtl:ignore */
+    direction: ltr;
+}
+
+.playgroundPreview {
+    @apply tw-relative tw-flex tw-h-full;
+
+    & > div {
+        @apply tw-flex tw-items-center tw-justify-center tw-w-full;
+    }
+}

@@ -1,0 +1,125 @@
+.docPage,
+.docMainContainer {
+    display: flex;
+    width: 100%;
+}
+
+.docPage {
+    @apply tw-bg-[color:var(--rf-doc-background-color)];
+}
+
+.docSidebarContainer {
+    display: none;
+}
+
+.docMainContainer > div {
+    display: flex;
+    width: 100%;
+    height: 100%;
+
+    > :global(.row) {
+        @apply tw-w-full tw-my-6 tw-mx-0 tw-bg-[color:var(--rf-doc-main-bg-color)] tw-rounded-sm;
+    }
+
+    > :global(.row) > :global(.col) {
+        /* max-width: unset !important; */
+    }
+
+    > :global(.row) > :global(.col) > div {
+        @apply tw-flex tw-flex-col tw-justify-between tw-h-full;
+    }
+}
+
+.docSidebarContainer {
+    display: none;
+}
+
+@media (min-width: 997px) {
+    .docMainContainer {
+        flex-grow: 1;
+        max-width: calc(100% - var(--doc-sidebar-width));
+    }
+
+    .docMainContainerEnhanced {
+        max-width: calc(100% - var(--doc-sidebar-hidden-width));
+    }
+
+    .docSidebarContainer {
+        display: block;
+        width: var(--doc-sidebar-width);
+        margin-top: calc(-1 * var(--ifm-navbar-height));
+        will-change: width;
+        transition: width var(--ifm-transition-fast) ease;
+    }
+
+    .docSidebarContainerHidden {
+        width: var(--doc-sidebar-hidden-width);
+        border-right: 1px solid rgb(207 198 198 / 50%);
+    }
+
+    .collapsedDocSidebar {
+        position: sticky;
+        top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        max-height: 100vh;
+        transition: background-color var(--ifm-transition-fast) ease;
+    }
+
+    .collapsedDocSidebar {
+        position: sticky;
+        top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        max-height: 100vh;
+        transition: background-color var(--ifm-transition-fast) ease;
+    }
+
+    .expandButton {
+        position: fixed;
+        top: 241px;
+        left: 0;
+        z-index: 999;
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        padding: 0;
+        margin: 0;
+        font-weight: 400;
+        line-height: 19px;
+        text-align: center;
+        cursor: pointer;
+        background: #fff;
+        border: 1px solid rgb(229 230 235);
+        border-radius: 50%;
+        outline: none;
+        box-shadow: 0 4px 10px 0 rgb(0 0 0 / 10%);
+        transition: all 0.15s;
+        transform: rotate(0);
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    .expandButton {
+        transform: rotate(0);
+    }
+
+    [dir='rtl'] .expandButton {
+        transform: rotate(180deg);
+    }
+}
+
+html[data-theme='dark'] {
+    .collapsedDocSidebar,
+    .expandButton {
+        color: rgb(226 227 231 / 50%);
+        background-color: #000;
+        border-color: rgb(226 227 231 / 50%);
+    }
+}

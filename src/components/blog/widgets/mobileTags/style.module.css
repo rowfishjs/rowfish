@@ -1,0 +1,23 @@
+.container {
+    @apply tw-max-w-full tw-flex tw-overflow-hidden tw-whitespace-nowrap;
+}
+
+.scrollBtn {
+    @apply tw-inline-flex tw-items-center tw-select-none first:tw-mr-2 last:tw-ml-2;
+}
+
+.itemList {
+    @apply tw-relative tw-flex tw-justify-between tw-max-w-full tw-overflow-x-auto tw-overflow-y-hidden;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    > a {
+        @apply tw-relative
+               tw-px-2 
+               first:tw-ml-0 
+               last:tw-mr-0 
+               tw-py-1;
+    }
+}

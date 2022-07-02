@@ -1,0 +1,6 @@
+{
+    "extends": "./tsconfig.json",
+    "files": ["./data/config.js"],
+    "include": ["./src", "./data/site", "./data/demo", "./typings", "**.js", "config"],
+    "exclude": [".docusaurus", "node_modules", "**/node_modules/*", "back", "static"]
+}

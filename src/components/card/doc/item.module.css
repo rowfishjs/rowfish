@@ -1,0 +1,51 @@
+.cardContainer {
+    @apply tw-flex tw-flex-col tw-p-1 tw-rounded-sm tw-items-center hover:tw-shadow-spread;
+
+    --ifm-link-hover-decoration: none;
+
+    /* border: 1px solid var(--ifm-color-emphasis-200); */
+    box-shadow: 0 1.5px 3px 0 rgb(0 0 0 / 15%);
+    transition: all var(--ifm-transition-fast) ease;
+    transition-property: border, box-shadow;
+
+    & > ul,
+    & > p {
+        @apply tw-h-[13rem] tw-overflow-hidden  tw-border-t-[1px] tw-border-slate-600/30  tw-w-4/5  tw-pt-3;
+    }
+
+    & > ul {
+        @apply tw-flex tw-flex-col;
+    }
+
+    & > ul > li {
+        @apply tw-flex;
+    }
+
+    & > ul > li > a {
+        @apply tw-w-full tw-px-3 tw-py-1 hover:tw-bg-[color:var(--ifm-color-primary)] dark:hover:tw-bg-[color:var(--ifm-color-primary-darker)] hover:tw-text-white;
+    }
+
+    & > ul > li > a.cateMore {
+        @apply tw-text-center hover:tw-bg-[color:rgb(0_0_0/0)] hover:tw-text-[color:var(--ifm-color-primary-darker)];
+    }
+}
+
+.cardContainer *:last-child {
+    margin-bottom: 0;
+}
+
+.cardTitle {
+    @apply tw-flex tw-items-center tw-w-4/5 tw-h-14;
+    font-size: 1rem;
+}
+
+.cardDescription {
+    @apply tw-px-2;
+    font-size: 0.8rem;
+}
+
+html[data-theme='dark'] {
+    .cardContainer > ul > li > a:not(.cateMore):hover {
+        @apply tw-bg-[color:var(--ifm-color-primary-darker)];
+    }
+}
