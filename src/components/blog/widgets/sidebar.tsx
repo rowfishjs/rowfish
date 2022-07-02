@@ -84,7 +84,7 @@ const BlogSidebarCourses: FC<{ data: CourseCardItemType[] }> = ({ data }) => {
                         i < 4 && (
                             <div className={$styles.courseItem} key={i.toFixed()}>
                                 <Link href={href} target={target ?? '_self'}>
-                                    <Image img={image} />
+                                    <img src={image} alt={name} />
                                 </Link>
                                 <div className={$styles.courseBody}>
                                     <Link
@@ -122,7 +122,7 @@ const BlogSidebarWorks: FC<{ data: WorkCardItemType[] }> = ({ data }) => {
                         i < 4 && (
                             <div className={$styles.courseItem} key={i.toFixed()}>
                                 <Link href={link} target={target ?? '_self'}>
-                                    <Image img={img} />
+                                    <img src={img} alt={name} />
                                 </Link>
                                 <div className={$styles.courseBody}>
                                     <Link
