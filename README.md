@@ -85,8 +85,7 @@
 
 >   当然你也可以直接把[Pro][pro]作为主站而不用[Rowfish][rowfish]，因为[Pro][pro]自带[Rowfish][rowfish]的几乎所有功能，但是在样式设计，用户体验等方面站长原则上会把[Rowfish][rowfish]做为优先级
 
-[点此查看大图](https://pic.pincman.com/media/202207011647835.png)
-![](https://pic.pincman.com/media/202207011647835.png)
+[点此查看简览图](https://pic.pincman.com/media/202207011647835.png)
 
 两者的功能对比如下
 
