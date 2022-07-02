@@ -8,7 +8,7 @@ export const worksInfo: WorksPageInfoType = {
 };
 export const works: WorkCardItemType[] = [
     {
-        img: require('@site/static/custom/rowfish-thumbnail.png').default,
+        img: require('@site/static/custom/rowfish-thumbnail.png'),
         name: 'Rowfish',
         desc: '用于构建知识分享及知识付费的博客系统,基于Docusaurus+Wordpress实现',
         link: '/docs/rowfish/',
