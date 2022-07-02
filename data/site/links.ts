@@ -5,6 +5,12 @@ export const linksData: LinkCategory[] = [
         name: '文档,博客,社区',
         links: [
             {
+                name: '愧怍小站',
+                desc: '在这里你能了解到各类实战开发的所遇到的问题，帮助你在学习的过程了解最新的技术栈',
+                href: 'https://kuizuo.cn/',
+                logo: 'https://kuizuo.cn/img/logo.webp',
+            },
+            {
                 name: 'ES6+入门教程',
                 desc: '阮一峰写的ES6+入门电子书',
                 href: 'https://es6.ruanyifeng.com/',
