@@ -55,7 +55,7 @@ import Image from '@theme/IdealImage';
 
 :::tip
 
-[Rowfish][rowfish]是一套用于构建个人文档库，作品展示和博客系统的[Docusaurus][docusaurus]主题，**主题基于MIT协议完全开源**，专为计算机从业者提升个人求职竞争力或于宁自媒体等而打造！ 🐳
+[Rowfish][rowfish]是一套用于构建个人文档库，作品展示和博客系统的[Docusaurus][docusaurus]主题，**主题基于[MIT license](https://opensource.org/licenses/MIT)完全开源**，专为计算机从业者提升个人求职竞争力或于宁自媒体等而打造！ 🐳
 
 :::
 
