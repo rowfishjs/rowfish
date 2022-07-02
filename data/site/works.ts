@@ -14,7 +14,7 @@ export const works: WorkCardItemType[] = [
         desc: '基于Docusaurus v2 静态网站生成器实现个人知识管理与分享程序,包含文档,博客,个人及作品介绍和生态导航等功能',
         link: '/rowfish',
         demo: 'https://pincman.com',
-        source: 'http://wpa.qq.com/msgrd?v=3&uin=1849600177&site=qq&menu=yes',
+        source: 'http://github.com/rowfishjs/rowfish',
         tags: ['docusarus', 'typescript', 'react', 'theme'],
     },
     {
