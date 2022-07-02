@@ -18,7 +18,7 @@ export const works: WorkCardItemType[] = [
         tags: ['docusarus', 'typescript', 'react', 'theme'],
     },
     {
-        img: require('@site/static/custom/rowfish-thumbnail.png'),
+        img: require('@site/static/custom/rowfish-pro-thumbnail.png'),
         name: 'Rowfish Pro',
         desc: '基于Wordpress及Rizhuti-V2开发的一款用于在线网课及知识付费的主题,包含问答系统,会员体系,在线支付等功能',
         link: '/rowfish#关于Pro',
