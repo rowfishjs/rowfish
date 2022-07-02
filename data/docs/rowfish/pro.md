@@ -2,6 +2,7 @@
 sidebar_position: 1
 sidebar_label: Pro系统
 hide_title: true
+hide_table_of_contents: true
 ---
 
 import Image from '@theme/IdealImage';
