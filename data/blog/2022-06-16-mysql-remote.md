@@ -20,6 +20,7 @@ rf_summary: 有两台云服务器,一台性能和内存很好,另一台带宽够
 
 ```shell
 mysql -u root -p 
-GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY '密码' WITH GRANT OPTION;
-flush privileges;
+CREATE USER 'root'@'%' IDENTIFIED BY '密码';
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' WITH GRANT OPTION;
+FLUSH PRIVILEGES;
 ```
