@@ -1,5 +1,5 @@
 export * from './common';
-export * from './blog';
+export * from './carousels';
 export * from './links';
 export * from './works';
-export * from './docs';
+export * from './courses';

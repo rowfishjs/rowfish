@@ -2,7 +2,7 @@
 slug: rowfish
 title: RowFish -- 开源一款比较好看的docusaurus主题
 type: image
-image: https://pic.pincman.com/media/202206301202195.png?imageMogr2/format/webp
+image: ./images/rowfish-banner.png
 authors: [pincman]
 rf_summary: 用于构建知识分享及知识付费的博客系统<br />为计算机从业者提升个人求职竞争力或从事网络授课/自媒体等作为副业而打造！
 rf_banner: true
@@ -11,8 +11,6 @@ rf_comment: false
 rf_excerpt: false
 order: 0
 ---
-
-
 import Image from '@theme/IdealImage';
 
 [rowfish]:https://pincman.com/rowfish
@@ -26,9 +24,7 @@ import Image from '@theme/IdealImage';
 [docusaurus]: https://docusaurus.io
 [php]: https://php.net
 [wordpress]: https://wordpress.org
-
 [laravel]: https://laravel.com
-
 [nextjs]: https://nextjs.org
 [nestjs]: https://nestjs.com
 [typescript]: https://typescript.org
@@ -88,8 +84,7 @@ import Image from '@theme/IdealImage';
 效果可以查看**[演示站点][pincman]**
 
 给张图，如下
-<Image img="https://pic.pincman.com/media/202207012135423.png" />
-
+<Image img={require('./images/rowfish-view.png')} />
 
 ## 🌴后续
 
@@ -102,7 +97,7 @@ import Image from '@theme/IdealImage';
 
  🍉 秋秋群
 
-![](https://pic.pincman.com/media/202207011929335.png)
+![](./images/rowfish-qq-group.png)
 
 ## 🐬关于Pro
 
@@ -126,8 +121,8 @@ import Image from '@theme/IdealImage';
 
 预览图
 
-<a href="https://pic.pincman.com/media/202207011647835.png" target="_blank" style={{ display: 'block',marginBottom: '1rem' }}>点此查看大图</a>
-<Image img="https://pic.pincman.com/media/202207011647835.png" />
+<a href={require('./images/rowfish-pro-view.png').default} target="_blank" style={{ display: 'block',marginBottom: '1rem' }}>点此查看大图</a>
+<Image img={require('./images/rowfish-pro-view.png')} />
 
 两者的功能对比如下
 

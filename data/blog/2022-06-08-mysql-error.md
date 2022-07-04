@@ -77,7 +77,7 @@ Some **content** with _markdown_ `syntax`. Check [this `api`](#).
 
 使用`df -h`命令查看磁盘占用，如下图，其
 
-![](https://pic.pincman.com/media/202206082003740.png)
+![](./images/mysql-error.png)
 
 打开`/data`目录，使用`du -sh *`命令查看文件的占用，发现了满屏以`mysql-bin.`开头的文件，并且每个文件占用大概1G多，这些文件一般来说是用来进行主从复制时使用的，然后我一单服务器给我生成这么一大堆，磁盘怎么可能不被沾满。。。
 

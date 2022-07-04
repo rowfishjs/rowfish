@@ -41,12 +41,16 @@
         @apply tw-flex;
     }
 
-    & > a > img {
-        @apply tw-w-[3.5rem] tw-h-[3.5rem];
+    & > a > div {
+        @apply tw-w-[3.5rem] tw-h-[3.5rem] tw-overflow-hidden;
     }
 
-    & > a > div {
-        @apply tw-ml-4 tw-flex-[0_0_auto] tw-flex tw-flex-col tw-justify-between tw-max-w-[calc(100%-5.5rem)];
+    & > a img {
+        @apply !tw-w-[3.5rem] !tw-h-[3.5rem] !tw-mb-0;
+    }
+
+    & > a > .content {
+        @apply !tw-w-auto !tw-h-auto tw-overflow-auto tw-ml-4 tw-flex-[0_0_auto] tw-flex tw-flex-col tw-justify-between tw-max-w-[calc(100%-5.5rem)];
     }
 }
 

@@ -124,7 +124,6 @@ const BlogSidebarWorks: FC<{ data: WorkCardItemType[] }> = ({ data }) => {
                                 <Link href={link} target={target ?? '_self'}>
                                     <Image img={img} />
                                 </Link>
-                                <div>{img.default}</div>
                                 <div className={$styles.courseBody}>
                                     <Link
                                         href={link}

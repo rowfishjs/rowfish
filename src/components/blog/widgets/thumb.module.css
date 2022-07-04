@@ -66,8 +66,29 @@
 .image {
     @apply tw-h-80 tw-flex tw-flex-col tw-overflow-hidden;
 
+    & div,
     & img {
-        @apply tw-relative tw--mb-80 tw-h-full tw-w-full  tw-transition-all tw-duration-300 tw-object-cover;
+        @apply tw-relative tw-overflow-hidden;
+    }
+
+    & > div {
+        @apply tw--mb-80 tw-w-full tw-h-full;
+
+        & > img {
+            @apply !tw-mb-0 !tw-h-full;
+        }
+    }
+
+    & > img {
+        @apply tw--mb-80 tw-h-full;
+    }
+
+    & img {
+        @apply tw-transition-all tw-duration-300 tw-object-fill;
+
+        @screen lg {
+            @apply tw-object-cover;
+        }
     }
 
     &:hover img {

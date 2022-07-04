@@ -35,7 +35,7 @@ const LinksBlock: FC<LinkType & { id: string }> = ({
                 className="dark:tw-text-[color:var(--ifm-font-color-base)] dark:hover:tw-text-[color:var(--ifm-link-hover-color)]"
             >
                 <Image img={logo} />
-                <div>
+                <div className={$styles.content}>
                     <span className="tw-ellips">
                         <b className="tw-animate-decoration ">{name}</b>
                     </span>

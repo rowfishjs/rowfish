@@ -17,8 +17,25 @@
 .item {
     @apply tw-rounded-md tw-flex tw-flex-col tw-overflow-hidden tw-h-full;
 
+    & div,
     & img {
-        @apply tw-relative tw--mb-80 tw-h-full tw-w-full tw-object-fill;
+        @apply tw-relative tw-overflow-hidden;
+    }
+
+    & > div {
+        @apply tw--mb-80 tw-w-full tw-h-full;
+
+        & > img {
+            @apply !tw-mb-0 !tw-h-full;
+        }
+    }
+
+    & > img {
+        @apply tw--mb-80 tw-h-full;
+    }
+
+    & img {
+        @apply tw-object-fill;
 
         @screen lg {
             @apply tw-object-cover;
@@ -26,7 +43,7 @@
     }
 
     & > .wrapper {
-        @apply tw-rounded-bl-md tw-rounded-br-md tw-relative  tw-flex tw-flex-auto tw-flex-col tw-justify-between;
+        @apply tw-rounded-bl-md tw-rounded-br-md tw-relative !tw-mb-0  tw-flex tw-flex-auto tw-flex-col tw-justify-between tw-h-auto;
 
         & > header {
             @apply tw-flex-auto tw-flex tw-flex-col tw-justify-center tw-font-kaiti;

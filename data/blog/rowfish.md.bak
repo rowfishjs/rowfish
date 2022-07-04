@@ -2,7 +2,7 @@
 slug: rowfish
 title: RowFish -- 一款美的无与伦比的主题
 type: image
-image: https://pic.pincman.com/media/202206301202195.png?imageMogr2/format/webp
+image: ../assets/blog/202206301202195.png
 authors: [pincman]
 rf_summary: 用于构建知识分享及知识付费的博客系统<br />为计算机从业者提升个人求职竞争力或从事网络授课/自媒体等作为副业而打造！
 rf_banner: true
@@ -87,8 +87,8 @@ import Image from '@theme/IdealImage';
 
 :::
 
-<a href="https://pic.pincman.com/media/202207012135423.png" target="_blank" style={{ display: 'block',marginBottom: '1rem' }}>点此查看大图</a>
-<Image img="https://pic.pincman.com/media/202207012135423.png" />
+<a href="../assets/blog/202207012135423.png" target="_blank" style={{ display: 'block',marginBottom: '1rem' }}>点此查看大图</a>
+<Image img="../assets/blog/202207012135423.png" />
 
 
 
@@ -96,8 +96,8 @@ import Image from '@theme/IdealImage';
 
 以下提供的是[pro][pro]的简览界面,同时你也可以访问[v.pincman.com][https://v.pincman.com]预览
 
-<a href="https://pic.pincman.com/media/202207011647835.png" target="_blank" style={{ display: 'block',marginBottom: '1rem' }}>点此查看大图</a>
-<Image img="https://pic.pincman.com/media/202207011647835.png" />
+<a href="../assets/blog/202207011647835.png" target="_blank" style={{ display: 'block',marginBottom: '1rem' }}>点此查看大图</a>
+<Image img="../assets/blog/202207011647835.png" />
 
 ### 🌾功能列表
 

@@ -1,7 +1,7 @@
 ---
 slug: about
 title: 关于站长和小站
-image: https://pic.pincman.com/media/202206070012244.png
+image: ./images/about.png
 authors: [pincman]
 rf_type: image
 rf_summary: 聊一聊生活,谈一谈技术,以及一个好的技术分享网站的诞生
