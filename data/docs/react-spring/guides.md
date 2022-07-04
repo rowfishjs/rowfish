@@ -12,26 +12,24 @@ import { CodePreview } from '@site/src/components/code';
 ```
 
 
-```mdx-code-block
 
 <div class="row" style={{ width: '100%',marginBottom: 16 }}>
     <div class="col col--6">
       <a href="https://codesandbox.io/embed/n9vo1my91p" target="_blank" style={{display: 'block', width: '100%'}}>
-         <img src="https://pic.pincman.com/media/202202031859868.gif" />
+         <img src={require('../images/react-spring-pc.gif').default} />
       </a>
     </div>
     <div class="col col--4">
       <a href="https://codesandbox.io/embed/n9vo1my91p" target="_blank">
-         <img src="https://pic.pincman.com/media/202202031903533.gif" />
+         <img src={require('../images/react-spring-tablet.gif').default} />
      </a>
     </div>
      <div class="col col--2">
        <a href="https://codesandbox.io/embed/n9vo1my91p" target="_blank">
-         <img src="https://pic.pincman.com/media/202202031916204.gif" />
+         <img src={require('../images/react-spring-mobile.gif').default} />
      </a>
     </div>
 </div>
-```
 
 ## 简述
 

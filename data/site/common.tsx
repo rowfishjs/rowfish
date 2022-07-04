@@ -5,13 +5,20 @@ import Mail from '@ricons/ionicons5/Mail';
 import Zhihu from '@ricons/antd/ZhihuOutlined';
 import Wechat from '@ricons/antd/WechatFilled';
 import QQ from '@ricons/antd/QqOutlined';
-import BiliBili from '@site/static/images/icons/bilibili.svg';
-import Juejin from '@site/static/images/icons/juejin.svg';
-import Feishu from '@site/static/images/icons/feishu.svg';
-import Gitea from '@site/static/images/icons/gitea.svg';
-import Cloud from '@ricons/material/CloudCircleOutlined';
+
 import { openDockModal } from '@site/src/utils';
+
 import { TipItem } from '@site/src/components/tip';
+
+import Cloud from '@ricons/material/CloudCircleOutlined';
+
+import Juejin from './images/common/dockBtns/juejin.svg';
+import Feishu from './images/common/dockBtns/feishu.svg';
+import Gitea from './images/common/dockBtns/gitea.svg';
+import BiliBili from './images/common/dockBtns/bilibili.svg';
+
+import WechatBlock from './images/common/wechat.jpg';
+import FeishuBlock from './images/common/feishu.jpg';
 
 export const siteData: SiteDataType = {
     owner: {
@@ -87,7 +94,7 @@ export const dockItems: DockItem[] = [
         name: '微信',
         icon: Wechat,
         onClick: () =>
-            openDockModal('wechat-modal', 'https://pic.pincman.com/media/202206281555555.jpg', {
+            openDockModal('wechat-modal', WechatBlock, {
                 w: 192,
                 h: 192,
             }),
@@ -102,7 +109,7 @@ export const dockItems: DockItem[] = [
         name: '飞书',
         icon: Feishu,
         onClick: () =>
-            openDockModal('feishu-modal', 'https://pic.pincman.com/media/202206281557491.jpg', {
+            openDockModal('feishu-modal', FeishuBlock, {
                 w: 160,
                 h: 208,
             }),
