@@ -43,7 +43,7 @@ export const tips: TipItem[] = [
     },
     {
         id: 'buy',
-        content: 'Rowfish主题(本站主题)开始售卖,欢迎尝鲜哦！<a href="/rowfish">立即购买</a>',
+        content: 'Rowfish主题(本站主题)开源啦,欢迎尝鲜哦！<a href="/rowfish">立即购买</a>',
         pages: ['blog'],
         color: 'success',
         closeTime: 3600 * 24,
