@@ -1,11 +1,8 @@
 import React, { FC, type ComponentProps } from 'react';
 import clsx from 'clsx';
 
-import {
-    useThemeConfig,
-    useHideableNavbar,
-    useNavbarMobileSidebar,
-} from '@docusaurus/theme-common';
+import { useThemeConfig } from '@docusaurus/theme-common';
+import { useHideableNavbar, useNavbarMobileSidebar } from '@docusaurus/theme-common/internal';
 
 import { NavbarMobileSidebar } from './mobile';
 

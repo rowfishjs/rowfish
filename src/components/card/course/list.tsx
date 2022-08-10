@@ -54,7 +54,7 @@ export const CourseCardItem: FC<{ course: CourseCardItemType; i: number }> = ({ 
                 <span style={{ backgroundColor: statuses[course.status ?? 0].color }}>
                     {statuses[course.status ?? 0].text}
                 </span>
-                <span
+                {/* <span
                     style={{
                         whiteSpace: 'nowrap',
                         fontSize: '0.75rem',
@@ -63,7 +63,7 @@ export const CourseCardItem: FC<{ course: CourseCardItemType; i: number }> = ({ 
                     }}
                 >
                     {course.isFree || isNil(course.isFree) ? '免费' : '收费'}
-                </span>
+                </span> */}
             </div>
             <div className={$styles.media}>
                 <Image img={image} />
@@ -110,19 +110,14 @@ export const CourseCards: FC<{ data: CourseCardItemType[] }> = ({ data }) => (
             ))}
         </div>
         <div className="tw-mt-5 tw-text-center tw-w-full">
-            <a
-                className="tw-ghostBtn"
-                href="https://v.pincman.com"
-                target="_blank"
-                rel="noreferrer"
-            >
+            <Link className="tw-ghostBtn" href="/classroom" rel="noreferrer">
                 <span className="tw-ghost-icon">
                     <span className="xicon">
                         <PointIcon />
                     </span>
                 </span>
-                <span className="tw-font-kaiti">学习更多高级教程</span>
-            </a>
+                <span className="tw-font-kaiti">进入全栈教室,体验体系学习</span>
+            </Link>
         </div>
     </>
 );

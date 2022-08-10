@@ -1,7 +1,6 @@
 import React, { FC, memo } from 'react';
 
-import { DocSidebarItemsExpandedStateProvider } from '@docusaurus/theme-common';
-
+import { DocSidebarItemsExpandedStateProvider } from '@docusaurus/theme-common/internal';
 import type { Props } from '@theme/DocSidebarItems';
 
 import { DocSidebarItem } from './item';

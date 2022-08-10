@@ -3,7 +3,7 @@ import React, { FC, useState } from 'react';
 import BackToTopButton from '@theme/BackToTopButton';
 import type { Props } from '@theme/DocPage/Layout';
 
-import { useDocsSidebar } from '@docusaurus/theme-common';
+import { useDocsSidebar } from '@docusaurus/theme-common/internal';
 
 import { Layout } from '../../layout';
 

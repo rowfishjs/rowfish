@@ -18,6 +18,8 @@ import { randomIntFrom } from '@site/src/utils';
 
 import MDXContent from '@theme/MDXContent';
 
+import { useBlogPost } from '@docusaurus/theme-common/internal';
+
 import styles from './thumb.module.css';
 import { MainExcerpt, TagsExcept } from './excerpt';
 
@@ -43,7 +45,8 @@ const blockIcons = [
     'lock',
 ];
 export const BlogThumb: FC<Props> = (props) => {
-    const { children, frontMatter, assets, metadata, truncated, isBlogPostPage = false } = props;
+    const { children } = props;
+    const { frontMatter, assets, metadata, isBlogPostPage = false } = useBlogPost();
     const { date, formattedDate, permalink, tags, title, editUrl, authors } = metadata;
     const {
         rf_summary: summary,

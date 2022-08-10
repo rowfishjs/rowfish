@@ -87,11 +87,11 @@ img {
     white-space: nowrap;
 }
 
-.admonition-heading {
+.theme-admonition > div:first-child {
     display: none;
 }
 
-.admonition::before {
+.theme-admonition::before {
     position: absolute;
     width: 21px;
     height: 21px;
@@ -112,31 +112,31 @@ img {
     box-shadow: none;
 }
 
-.admonition-content {
+.theme-admonition-content {
     @apply tw-text-[color:rgb(74_71_71)] dark:tw-text-[color:rgb(236_227_227)];
 }
 
-.admonition.alert--info {
+.theme-admonition.alert--info {
     @apply tw-bg-sky-200 tw-border-l-sky-500  before:tw-content-['\27BE'] before:tw-bg-sky-500
     dark:tw-bg-sky-900/20 dark:tw-border-l-sky-600/50 dark:before:tw-bg-sky-600/50;
 }
 
-.admonition.alert--secondary {
+.theme-admonition.alert--secondary {
     @apply tw-bg-neutral-100 tw-border-l-neutral-300 before:tw-content-['\0040'] before:tw-bg-neutral-300 
     dark:tw-bg-neutral-900/20 dark:tw-border-l-neutral-500/50 dark:before:tw-bg-neutral-500/50;
 }
 
-.admonition.alert--success {
+.theme-admonition.alert--success {
     @apply tw-bg-lime-100 tw-border-l-lime-500 before:tw-content-['\266C'] before:tw-bg-lime-500
     dark:tw-bg-lime-900/20 dark:tw-border-l-lime-700/50 dark:before:tw-bg-lime-700/50;
 }
 
-.admonition.alert--warning {
+.theme-admonition.alert--warning {
     @apply tw-bg-yellow-100 tw-border-l-yellow-400  before:tw-content-['\0021'] before:tw-bg-yellow-400
      dark:tw-bg-orange-900/20 dark:tw-border-l-yellow-600/50 dark:before:tw-bg-yellow-600/50;
 }
 
-.admonition.alert--danger {
+.theme-admonition.alert--danger {
     @apply tw-bg-rose-200 tw-border-l-red-600 before:tw-content-['\2717'] before:tw-bg-red-600
     dark:tw-bg-red-900/20 dark:tw-border-l-red-700/50 dark:before:tw-bg-red-700/50;
 }

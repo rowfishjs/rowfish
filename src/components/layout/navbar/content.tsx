@@ -3,7 +3,8 @@ import type { Props as NavbarItemConfig } from '@theme/NavbarItem';
 import NavbarItem from '@theme/NavbarItem';
 import NavbarColorModeToggle from '@theme/Navbar/ColorModeToggle';
 import SearchBar from '@theme/SearchBar';
-import { splitNavbarItems, useNavbarMobileSidebar, useThemeConfig } from '@docusaurus/theme-common';
+import { useThemeConfig } from '@docusaurus/theme-common';
+import { splitNavbarItems, useNavbarMobileSidebar } from '@docusaurus/theme-common/internal';
 import NavbarMobileSidebarToggle from '@theme/Navbar/MobileSidebar/Toggle';
 
 import clsx from 'clsx';

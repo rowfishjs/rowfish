@@ -1,12 +1,7 @@
 import React, { FC, useCallback, useEffect } from 'react';
-import LayoutProviders from '@theme/LayoutProviders';
+import LayoutProvider from '@theme/Layout/Provider';
 
-import {
-    PageMetadata,
-    ThemeClassNames,
-    useColorMode,
-    useKeyboardNavigation,
-} from '@docusaurus/theme-common';
+import { PageMetadata, ThemeClassNames, useColorMode } from '@docusaurus/theme-common';
 
 import clsx from 'clsx';
 import SkipToContent from '@theme/SkipToContent';
@@ -81,9 +76,8 @@ export const Layout: FC<LayoutProps> = ({
     ...props
 }) => {
     const { children, wrapperClassName, title, description } = props;
-    useKeyboardNavigation();
     return (
-        <LayoutProviders>
+        <LayoutProvider>
             <DarkModeMonitor>
                 <div id="main-layout" className={clsx(baseClasses, className)}>
                     <PageMetadata title={title} description={description} />
@@ -100,6 +94,6 @@ export const Layout: FC<LayoutProps> = ({
                     </div>
                 </div>
             </DarkModeMonitor>
-        </LayoutProviders>
+        </LayoutProvider>
     );
 };

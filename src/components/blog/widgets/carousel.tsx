@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, Keyboard, Mousewheel, Pagination } from 'swiper';
+import { Autoplay, Keyboard, Pagination } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
@@ -54,7 +54,7 @@ export const Carousel: FC<{ data: CarouselItemType[] }> = ({ data }) => {
                 enabled: true,
             }}
             autoplay={{
-                delay: 5000,
+                delay: 8000,
                 disableOnInteraction: false,
                 waitForTransition: true,
                 pauseOnMouseEnter: true,
@@ -63,7 +63,7 @@ export const Carousel: FC<{ data: CarouselItemType[] }> = ({ data }) => {
             pagination={{
                 clickable: true,
             }}
-            modules={[Mousewheel, Keyboard, Autoplay, Pagination]}
+            modules={[Keyboard, Autoplay, Pagination]}
         >
             {data.map((item, i) => (
                 <SwiperSlide key={i.toFixed()}>

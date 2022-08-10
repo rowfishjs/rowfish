@@ -4,14 +4,14 @@ import type { Props } from '@theme/DocPage';
 
 import clsx from 'clsx';
 
+import { HtmlClassNameProvider, ThemeClassNames } from '@docusaurus/theme-common';
+
 import {
-    HtmlClassNameProvider,
-    ThemeClassNames,
     docVersionSearchTag,
     DocsSidebarProvider,
     DocsVersionProvider,
     useDocRouteMetadata,
-} from '@docusaurus/theme-common';
+} from '@docusaurus/theme-common/internal';
 import SearchMetadata from '@theme/SearchMetadata';
 
 import { DocPageLayout } from './layout';

@@ -3,9 +3,9 @@ import { WorkCardTagsType } from '@site/src/components/card/work';
 import { WorkCardItemType, WorksPageInfoType, Techbadge } from '@site/src/types';
 
 export const worksInfo: WorksPageInfoType = {
-    title: '关于我',
+    title: '开源作品集',
     description:
-        '一名中年老码农,为生活而负重前行,为兴趣而坚守理想,专注于TS,React,Node全栈<br />同时拥有15年PHP开发经验并学习Golang中',
+        '我是一名中年老码农,为生活而负重前行,为兴趣而坚守理想,专注于TS,React,Node全栈<br />同时拥有15年PHP开发经验并学习Golang中',
 };
 export const works: WorkCardItemType[] = [
     {

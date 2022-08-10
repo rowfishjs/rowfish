@@ -9,8 +9,8 @@ export const DocPaginator: FC<Props> = (props) => {
 
     return (
         <Paginator
-            nextItem={previous}
-            prevItem={next}
+            nextItem={next}
+            prevItem={previous}
             aria={translate({
                 id: 'theme.docs.paginator.navAriaLabel',
                 message: 'Docs pages navigation',

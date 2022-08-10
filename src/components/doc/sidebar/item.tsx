@@ -1,19 +1,22 @@
 import React, { FC, useEffect, useMemo } from 'react';
 import clsx from 'clsx';
 import {
-    isActiveSidebarItem,
     usePrevious,
     Collapsible,
     useCollapsible,
-    findFirstCategoryLink,
     ThemeClassNames,
     useThemeConfig,
-    useDocSidebarItemsExpandedState,
-    isSamePath,
 } from '@docusaurus/theme-common';
 import Link from '@docusaurus/Link';
 import isInternalUrl from '@docusaurus/isInternalUrl';
 import { translate } from '@docusaurus/Translate';
+
+import {
+    isActiveSidebarItem,
+    findFirstCategoryLink,
+    useDocSidebarItemsExpandedState,
+    isSamePath,
+} from '@docusaurus/theme-common/internal';
 
 import type { Props } from '@theme/DocSidebarItem';
 import type { PropSidebarItemCategory, PropSidebarItemLink } from '@docusaurus/plugin-content-docs';

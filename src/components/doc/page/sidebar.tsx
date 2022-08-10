@@ -4,7 +4,8 @@ import type { Props } from '@theme/DocPage/Layout/Sidebar';
 
 import clsx from 'clsx';
 
-import { ThemeClassNames, useDocsSidebar } from '@docusaurus/theme-common';
+import { ThemeClassNames } from '@docusaurus/theme-common';
+import { useDocsSidebar } from '@docusaurus/theme-common/internal';
 
 import { DocSidebar } from '../sidebar';
 

@@ -9,6 +9,7 @@ rf_banner: true
 rf_noloop: true
 rf_comment: false
 rf_excerpt: false
+rf_paginator: false
 order: 0
 ---
 import Image from '@theme/IdealImage';

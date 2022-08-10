@@ -4,9 +4,9 @@ import {
     NavbarSecondaryMenuFiller,
     type NavbarSecondaryMenuComponent,
     ThemeClassNames,
-    useNavbarMobileSidebar,
 } from '@docusaurus/theme-common';
 import type { Props } from '@theme/DocSidebar/Mobile';
+import { useNavbarMobileSidebar } from '@docusaurus/theme-common/internal';
 
 import { DocSidebarItems } from './items';
 

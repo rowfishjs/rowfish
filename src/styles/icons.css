@@ -58,6 +58,10 @@
     mask-image: url('/images/icons/about.svg');
 }
 
+.room-icon::before {
+    mask-image: url('/images/icons/room.svg');
+}
+
 .yargs-icon::before {
     background-image: url('/images/icons/react-router.png');
 }

@@ -14,7 +14,8 @@ import BlogListPaginator from '@theme/BlogListPaginator';
 import SearchMetadata from '@theme/SearchMetadata';
 import clsx from 'clsx';
 
-import { BlogThumb } from './widgets/thumb';
+import { BlogPostItems } from './items';
+// import { BlogThumb } from './widgets/thumb';
 
 // Very simple pluralization: probably good enough for now
 function useBlogPostsPlural() {
@@ -33,7 +34,7 @@ function useBlogPostsPlural() {
             ),
         );
 }
-export const BlogTagsPostsPage: FC<Props> = (props) => {
+const BlogTagsPostsPage: FC<Props> = (props) => {
     const { tag, items, sidebar, listMetadata } = props;
     const blogPostsPlural = useBlogPostsPlural();
     const title = translate(
@@ -69,20 +70,16 @@ export const BlogTagsPostsPage: FC<Props> = (props) => {
                 </header>
 
                 <div className="tw-w-full tw-flex-auto">
-                    {items.map(({ content: BlogPostContent }) => (
-                        <BlogThumb
-                            key={BlogPostContent.metadata.permalink}
-                            frontMatter={BlogPostContent.frontMatter}
-                            assets={BlogPostContent.assets}
-                            metadata={BlogPostContent.metadata}
-                            truncated={BlogPostContent.metadata.truncated}
-                        >
+                    <BlogPostItems items={items} />
+                    {/* {items.map(({ content: BlogPostContent }) => (
+                        <BlogThumb>
                             <BlogPostContent />
                         </BlogThumb>
-                    ))}
+                    ))} */}
                     <BlogListPaginator metadata={listMetadata} />
                 </div>
             </BlogLayout>
         </HtmlClassNameProvider>
     );
 };
+export default BlogTagsPostsPage;

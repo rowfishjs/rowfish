@@ -26,7 +26,7 @@
     }
 
     & > div:last-child {
-        @apply tw-h-16 tw-flex tw-justify-center tw-items-center tw-text-neutral-500/80 tw-font-kaiti;
+        @apply tw-h-16 tw-flex tw-justify-center tw-items-center tw-text-black tw-font-kaiti;
     }
 }
 
@@ -87,7 +87,7 @@
 
         > .courseBody {
             @apply tw-w-1/2 md:tw-w-full lg:tw-w-1/2 md:tw-max-h-[5rem] lg:tw-max-h-full
-            tw-flex tw-flex-col tw-justify-between;
+            tw-flex tw-flex-col tw-justify-between tw-pr-2;
 
             & > .courseTitle {
                 @apply tw-leading-[1.2] tw-mb-1 md:tw-mt-2 lg:tw-mt-0;
@@ -103,7 +103,7 @@
 
 html[data-theme='dark'] {
     .owner > div:last-child {
-        @apply tw-text-neutral-100/80;
+        @apply tw-text-white;
     }
 
     .courses > .coursesContent > .courseItem {

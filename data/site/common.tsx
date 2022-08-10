@@ -36,7 +36,7 @@ export const tips: TipItem[] = [
     {
         id: 'update',
         content:
-            '《Nestjs最佳实践》以及《React18最佳实践》已经开发更新,欢迎<a href="https://v.pincman.com">加入学习</a>!',
+            '《Nestjs最佳实践》以及《React18最佳实践》更新中,欢迎<a href="/docs/courses">学习</a>!',
         color: 'warning',
         pages: ['blog'],
         closeTime: 3600 * 24,
@@ -49,9 +49,17 @@ export const tips: TipItem[] = [
         closeTime: 3600 * 24,
     },
     {
+        id: 'classroom',
+        content:
+            '加入<a href="/classroom">极速教室</a>开启你的全栈学习征程,增加远程工作求职机会,拓展接单渠道！',
+        pages: ['blog'],
+        color: 'info',
+        closeTime: 3600 * 24,
+    },
+    {
         id: 'concat',
         content:
-            '欢迎找我,🐧:1849600177   👉 请点击左侧(移动为底部)工具栏选择更多方式联系或关注我!',
+            '欢迎找我,🐧:1849600177 微信:yjosscom  👉 请点击左侧(移动为底部)工具栏选择更多方式联系或关注我!',
         pages: ['about'],
         color: 'success',
         center: true,

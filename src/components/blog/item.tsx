@@ -9,8 +9,9 @@
 import React, { FC, useEffect, useState } from 'react';
 import clsx from 'clsx';
 import { translate } from '@docusaurus/Translate';
-import { useBaseUrlUtils } from '@docusaurus/useBaseUrl';
-import { useLocalPathname, usePluralForm } from '@docusaurus/theme-common';
+import { usePluralForm } from '@docusaurus/theme-common';
+
+import { useBlogPost, useLocalPathname } from '@docusaurus/theme-common/internal';
 import { blogPostContainerID } from '@docusaurus/utils-common';
 import MDXContent from '@theme/MDXContent';
 import EditThisPage from '@theme/EditThisPage';
@@ -60,10 +61,10 @@ function useReadingTimePlural() {
 }
 
 export const BlogPostItem: FC<Props> = (props) => {
-    const readingTimePlural = useReadingTimePlural();
-    const { withBaseUrl } = useBaseUrlUtils();
-    const { children, frontMatter, assets, metadata, truncated, isBlogPostPage = false } = props;
-    const { date, formattedDate, permalink, tags, readingTime, title, editUrl, authors } = metadata;
+    const { children } = props;
+    const { frontMatter, assets, metadata, isBlogPostPage = false } = useBlogPost();
+    const { date, formattedDate, tags, title, editUrl, authors, hasTruncateMarker } = metadata;
+    const truncatedPost = !isBlogPostPage && hasTruncateMarker;
     const {
         rf_banner: headerImg,
         image: metaImage,
@@ -71,7 +72,6 @@ export const BlogPostItem: FC<Props> = (props) => {
         rf_excerpt: enableExcerpt = true,
     } = frontMatter as any;
     const [image, setImage] = useState(assets.image ?? metaImage);
-    const truncatedPost = !isBlogPostPage && truncated;
     const tagsExists = tags.length > 0;
     const TitleHeading = isBlogPostPage ? 'h1' : 'h2';
     const pathname = useLocalPathname();
@@ -146,7 +146,7 @@ export const BlogPostItem: FC<Props> = (props) => {
                         isBlogPostPage && styles.blogPostDetailsFull,
                     )}
                 >
-                    {(tagsExists || truncated) && isBlogPostPage && editUrl && (
+                    {(tagsExists || truncatedPost) && isBlogPostPage && editUrl && (
                         <div className="col margin-top--sm">
                             <EditThisPage editUrl={editUrl} />
                         </div>

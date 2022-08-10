@@ -1,6 +1,8 @@
 import React, { FC, useState } from 'react';
 import clsx from 'clsx';
-import { ThemeClassNames, useAnnouncementBar, useScrollPosition } from '@docusaurus/theme-common';
+import { ThemeClassNames } from '@docusaurus/theme-common';
+
+import { useAnnouncementBar, useScrollPosition } from '@docusaurus/theme-common/internal';
 
 import type { Props } from '@theme/DocSidebar/Desktop/Content';
 

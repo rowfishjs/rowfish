@@ -1,3 +1,4 @@
+/* eslint-disable global-require */
 import React, { FC, ReactNode, useEffect, useRef, useState } from 'react';
 import { usePluginData } from '@docusaurus/useGlobalData';
 import { useDeepCompareEffect } from 'ahooks';
@@ -176,6 +177,7 @@ const BlogSidebarTags: FC = () => {
         </div>
     );
 };
+
 export const BlogSidebar: FC<{ toc?: ReactNode; posts?: PostItem[] }> = ({ toc, posts = [] }) => {
     const ref = useRef<HTMLDivElement | null>(null);
     // const blogData = usePluginData('docusaurus-plugin-content-blog', 'default') as any;

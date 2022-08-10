@@ -1,5 +1,5 @@
 import ExecutionEnvironment from '@docusaurus/ExecutionEnvironment';
-import { useDocsSidebar } from '@docusaurus/theme-common';
+import { useDocsSidebar } from '@docusaurus/theme-common/internal';
 import DocCardList from '@theme/DocCardList';
 import { isNil } from 'lodash-es';
 import React, { useEffect, useMemo } from 'react';

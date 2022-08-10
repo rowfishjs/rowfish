@@ -14,7 +14,7 @@ import type {
     PropSidebarItemLink,
 } from '@docusaurus/plugin-content-docs';
 import type { Props } from '@theme/DocCard';
-import { findFirstCategoryLink, useDocById } from '@docusaurus/theme-common';
+import { findFirstCategoryLink, useDocById } from '@docusaurus/theme-common/internal';
 import clsx from 'clsx';
 
 import isInternalUrl from '@docusaurus/isInternalUrl';

@@ -1,7 +1,8 @@
 import React, { useState, cloneElement, isValidElement, type ReactElement, FC } from 'react';
 import clsx from 'clsx';
 import useIsBrowser from '@docusaurus/useIsBrowser';
-import { useScrollPositionBlocker, duplicates, useTabGroupChoice } from '@docusaurus/theme-common';
+import { duplicates } from '@docusaurus/theme-common';
+import { useScrollPositionBlocker, useTabGroupChoice } from '@docusaurus/theme-common/internal';
 import type { Props } from '@theme/Tabs';
 import type { Props as TabItemProps } from '@theme/TabItem';
 

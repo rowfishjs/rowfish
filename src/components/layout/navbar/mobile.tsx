@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import NavbarMobileSidebarLayout from '@theme/Navbar/MobileSidebar/Layout';
 
-import { useLockBodyScroll, useNavbarMobileSidebar } from '@docusaurus/theme-common';
+import { useLockBodyScroll, useNavbarMobileSidebar } from '@docusaurus/theme-common/internal';
 import NavbarMobileSidebarPrimaryMenu from '@theme/Navbar/MobileSidebar/PrimaryMenu';
 import NavbarMobileSidebarSecondaryMenu from '@theme/Navbar/MobileSidebar/SecondaryMenu';
 

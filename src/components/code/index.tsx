@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import CodeBlockDefault from '@theme-original/CodeBlock';
 
 import ReactLiveScope from '@theme/ReactLiveScope';
-import { parseCodeBlockTitle } from '@docusaurus/theme-common';
+import { parseCodeBlockTitle } from '@docusaurus/theme-common/internal';
 
 import { Playground } from './playground';
 

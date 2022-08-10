@@ -14,6 +14,12 @@ module.exports = [
                 sidebarPath: require.resolve(path.resolve(__dirname, './sidebars.js')),
             },
             blog: false,
+            // blog: {
+            //     ...configure.blog,
+            //     blogPostComponent: '@site/src/components/blog/singlePage',
+            //     blogListComponent: '@site/src/components/blog/listPage',
+            //     blogTagsPostsComponent: '@site/src/components/blog/tagsPostsPage',
+            // },
             theme: {
                 customCss: path.resolve(__dirname, '../src/styles/index.css'),
             },

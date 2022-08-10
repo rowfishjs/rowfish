@@ -37,11 +37,11 @@
     --ifm-color-primary-lighter: #b8e478;
     --ifm-color-primary-lightest: #f1faca;
     --ifm-background-color: rgb(228 246 204 / 20%) !important;
-    --ifm-font-color-small: rgb(144 141 141);
-    --ifm-font-color-base: rgb(114 114 111);
-    --ifm-heading-color: rgb(78 73 73);
-    --ifm-link-color: rgb(77 72 72);
-    --ifm-link-hover-color: rgb(16 14 14);
+    --ifm-font-color-small: rgb(45 45 45);
+    --ifm-font-color-base: rgb(25 25 25);
+    --ifm-heading-color: rgb(20 20 20);
+    --ifm-link-color: rgb(15 15 15);
+    --ifm-link-hover-color: rgb(10 10 10);
     --ifm-navbar-background-color: rgb(255 250 243 / 90%);
     --ifm-dropdown-background-color: var(--ifm-navbar-background-color);
     --ifm-navbar-link-color: var(--ifm-link-color);

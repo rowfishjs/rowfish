@@ -14,7 +14,11 @@ module.exports = [
         const blogPluginInstance = await BlogPlugin(context, {
             ...DefaultBlogOptions,
             ...options,
+            path: './data/blog',
             ...configure.blog,
+            blogPostComponent: '@site/src/components/blog/singlePage',
+            blogListComponent: '@site/src/components/blog/listPage',
+            blogTagsPostsComponent: '@site/src/components/blog/tagsPostsPage',
         });
 
         return {

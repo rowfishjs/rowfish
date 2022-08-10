@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 
-import { useDocsSidebar } from '@docusaurus/theme-common';
+import { useDocsSidebar } from '@docusaurus/theme-common/internal';
 
 import clsx from 'clsx';
 

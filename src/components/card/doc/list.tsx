@@ -2,7 +2,7 @@ import React from 'react';
 
 import DocCard from '@theme/DocCard';
 import type { PropSidebarItem } from '@docusaurus/plugin-content-docs';
-import { findFirstCategoryLink } from '@docusaurus/theme-common';
+import { findFirstCategoryLink } from '@docusaurus/theme-common/internal';
 
 // Filter categories that don't have a link.
 function filterItems(items: PropSidebarItem[]): PropSidebarItem[] {

@@ -74,3 +74,11 @@ export interface WorksPageInfoType {
     title?: string;
     description?: string;
 }
+
+export interface BannerButtonType {
+    title: string;
+    icon: ComponentType<any>;
+    link: string;
+    desc?: string;
+    target?: string;
+}
