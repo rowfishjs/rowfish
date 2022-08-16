@@ -135,6 +135,41 @@ order: 0
 | React-Spring                                   | 缓存与高并发处理                     |                                        |
 | 其它相关生态                                   | 其它相关生态                         |                                        |
 
+**课程表**
+
+1. Typescript+Eslint+Prettier搭建工程构建与深入装饰器详解
+2. Nestjs概念详解-模块,控制器,路由,提供者,模块等
+3. 整合Typeorm，自定义验证约束，自定义全局验证器，序列化拦截器，异常处理过滤器等
+4. 配置模块使用与详解
+5. Typeorm高级用法-树形嵌套,事务,订阅者,迁移等
+6. Passport实现用户认证与用户权限
+7. 任务调度，异步消息队列bullmq+redis与websocket,SSE实现
+8. Open API与Graphql使用
+9. 文件下载，断点续传，图片剪裁等
+10. TDD和E2E测试，缓存，日志等
+11. TSC/TS-Node/SWC/ESBuild等多种TS运行与编译的方案使用与Pkg二进制打包
+12. Node CLI编写,yargs生态使用
+13. 使用Fasitfy构建应用等
+14. Docker，PM2，Linux基础运维，CI/CD等
+15. 进程/协程，Fork，Cluster，高性能和分布式等
+16. 结合腾讯云使用Serveless开发
+17. Typescript+Vite+Eslint+Prettier+Stylelint的工程构建
+18. React Hooks详解
+19. React Router v6+Zustand/Jotai构建基础应用
+20. Mock数据，本地持久化，SWR使用等
+21. PostCSS，TailwindCSS与Acro组件库，Ionify图标库使用
+22. Echarts与Antd Charts对比使用构建可视化
+23. React-DND可拖动的低代码页面构建
+24. React-Spring动画库详解
+25. 一些常用的React库使用
+26. 深入浅出CRA与Webpack
+27. Nextjs SSR网站构建上
+28. Nextjs SSR网站构建下
+29. Electron+React使用详解上
+30. Electron+React使用详解下
+31. PNPM，Lerna.js，Monorepo工程及前后端同构
+32. Docusaurus打造个人网站与远程工作求职指导
+
 ###  🍍最终的成果
 
 -   可以独立开发一个vite+react+ts的后台管理系统
@@ -160,12 +195,11 @@ order: 0
 
 **10人为一班，每期3个班，固定日期开课**
 
-|          |    React体系     |   Node.js体系    |                   全栈体系                   |
-| :------: | :--------------: | :--------------: | :------------------------------------------: |
-|   价格   |      1299元      |      1999元      |                    2999元                    |
-| 额外服务 | 远程工作求职指导 | 远程工作求职指导 | 远程工作求职指导<br />承接外包渠道及谈判指导 |
-| 免费增值 |                  |    PHP/Golang    |           PHP/React Native/Golang            |
-| 学习周期 |      3个月       |      4个月       |                    6个月                     |
+|   价格   |                    3399元                    |
+| :------: | :------------------------------------------: |
+| 额外服务 | 远程工作求职指导<br />承接外包渠道及谈判指导 |
+| 免费增值 |           PHP/React Native/Golang            |
+| 学习周期 |                    4个月                     |
 
 ### 🔥小白精通课
 
@@ -184,4 +218,3 @@ order: 0
 微信: yjosscom
 QQ： 1849600177
 网址: https://pincman.com
-
