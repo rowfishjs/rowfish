@@ -39,20 +39,56 @@ import $styles from '../style.module.css';
 
 :::
 
-## ✍️目标学者
+本教程的目标不止步与使童鞋们学会使用Nestjs框架本身构建web后端,更在于让大家掌握如何熟练地运用TS以及Node.js的知识和周边的生态灵活的构建所需的应用
+
+比如利用Yargs构建命令行,利用ws/socket.io构建IM,以及消息列队在node.js中的实现等
+
+所以,教程的名字也许改成《TS-NODE最佳实践》更好？
+
+> 本教程为免费教程,代码仓库和文档均免费公开,有BUG可以在[这里](https://github.com/nestplus/nestplus/issues)提交,**注意本教程不适合小白入门**
+
+- [教程](https://space.bilibili.com/53679018/channel/collectiondetail?sid=615904)
+- [代码](https://github.com/nestplus/nestplus)
+- [文档](https://pincman.com/docs/courses/nestjs-practise)
+
+## 关于Nestjs
+
+Nestjs是当前比较流行的一款使用Typescript开发Node应用的企业级框架,非常适合与React,Vue,Next.js/Nuxt.js等前端技术进行全栈同构开发,对Serverless+Node进行快速应用开发也比较适用.同时框架本身对微服务的支持也很不错,并且AOP支持很好,可以承担部分业务层比较复杂的企业级开发,性能在换上fastify驱动后也是杠杠的,整体来说非常全面,是目前typescript写后端的最佳选择.
+
+因为学习本教程的童鞋大多是直接前端转过来想成为全栈的,在后端方便的知识会比较欠缺,所以在开始学习的同时最好也恶补一下Node.js和Typescript的一些基础知识,这样学习本教程就会事半功倍.当然如果你有过其它后端编程语言以及框架的开发经验（比如[Flask](https://www.palletsprojects.com/p/flask/),[Laravel](https://laravel.com/),[Spring boot](https://spring.io/projects/spring-boot)等）或者基于Node的Egg.js则更佳.
+
+## ⚡️适用场景
+
+学习了Ts,Node,Nestjs来构建后端对于全栈开发是十分有帮助的,但不是所有场景都适合使用Node和TS的,下面我们来分析一下
+
+Node.js的优势并不在于生态或性能
+
+在技术选型上,Node.js目前的最大优势还是在于前后端同构以及serverless方面,但是以下场景都比较适用
+
+- 聊天室,爬虫类,游戏服务端类,区块链(可代替go)项目等应用
+- 缺少后端人员但需要快速快速上线的初创型项目
+- 处于上升期,并发量,吞吐量和IO密集型有一定需求,同时对CPU密集不敏感的应用
+- 需要项目一体化及与前端同构的应用
+- serverless应用
+- 前端与API的中间层
+- 需要前后端一体化架构,代码统一的应用
+- 性能要求不高的CLI类命令行工具以及桌面应用(Electron)
+- 各种CLI工具
+
+## ✍️目标学员
 
 本教程适合以下几类童鞋学习
 
+- 👉 已经对TS的其它前端技术栈掌握的比较深入想多学一门后端技术
+- 👉 已经对TS和Node的其它框架及技术掌握的比较深入,纯粹想学Nestjs
+- 👉 其它技术栈比较熟练(比如Java,PHP,Rails等),想转Node
 - 👉 学了TS和ES6,想先从Node.js入手后端再学前端的小白
-- 👉 跟我一样三级没过看不懂各种英文文档,需要谷歌翻译加持,却想加快学习进度的土鳖
-- 👉 职业前端转全栈,想用Node做个后端学习的跳板,后面可以继续学习go等
-- 👉 PHPer(大家都懂得原因),学习一下node顺带学习ts和前端可以获得更多的求职及跳槽的资本
-- 👉 Javaer,跟PHP相反的是Java招的人多,但是学的人更多,多学一门技术抵消部分竞争力
-- 👉 Gopher,想学习一下传统的企业级框架拓展知识面
-- 👉 企业技术栈转型急需
-- 😜吃饱撑得没事做的码农...
 
-## 🔥教程目录
+## 🔥 广告
+
+**[平克小站](https://pincman.com)正在开设[《TS全栈开发培训班》](https://pincman.com/classroom)，不仅仅是在教学中帮助你提升自我，全面掌握TS+Node.js/Nesjts+React的全栈开发技术栈，并且同时指导你寻找稳定高薪的远程工作之方法！**
+
+## 🎾教程内容
 
 1. 👉 [第一集: 编码环境搭建](/docs/courses/nestjs-practise/chapter1)
 2. 👉 [第二集: 基本数据操作](/docs/courses/nestjs-practise/chapter2)
@@ -60,7 +96,9 @@ import $styles from '../style.module.css';
 4. 👉 [第四集: 排序,分页与过滤的实现](/docs/courses/nestjs-practise/chapter4)
 5. 👉 [第五集: 自动验证,序列化与异常处理](/docs/courses/nestjs-practise/chapter5)
 
-## 🌒教程内容
+## 🌒 知识点
+
+本教程由浅入深的讲解TS Node与Nestjs应用的开发.教程中通过循序渐进的方式实现一个无懈可击的商业应用，帮助大家快速,高效的掌握Node.js,TS以及Nestjs
 
 本教程篇幅定在三十五集左右，通过一个完备的后端应用由浅入深地讲解Nestjs应用的开发.教程中通过循序渐进的方式全方位的讲解Nestjs框架的应用开发和魔改Hack,使大家能快速,高效的掌握Nestjs并且加深对TS和node.js的熟练度.
 
@@ -96,7 +134,8 @@ import $styles from '../style.module.css';
 - 第三方社会化登录以及统一支付接口开发等
 - 其它的一些常用功能
 
-
 ## 👀问题解决
 
-如果在教程中遇到问题，可以扫码加视频里的QQ群提问，可以加我微信**yjosscom**，我会把你拉微信群，在群里提问反馈会比QQ群更快
+如果在教程中遇到问题，可以扫码加视频里的QQ群提问
+
+也可以加我微信**yjosscom**，我会把你拉微信群，在微信群里提问反馈会比QQ群更快
