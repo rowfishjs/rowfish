@@ -38,6 +38,21 @@ img {
     @apply tw-object-cover;
 }
 
+ol {
+    @apply tw-list-decimal;
+    padding: 0 2rem;
+    margin-top: 20px;
+    margin-bottom: var(--ifm-leading);
+
+    & > li > p {
+        margin: 0 !important;
+    }
+}
+
+ul {
+    @apply tw-list-disc;
+}
+
 ::-webkit-scrollbar {
     width: 4px !important;
     height: 4px !important;
