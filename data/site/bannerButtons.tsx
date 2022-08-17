@@ -6,12 +6,12 @@ import CourseIcon from '@ricons/antd/VideoCameraOutlined';
 import OrderIcon from '@ricons/material/HandshakeOutlined';
 
 export const bannerButtons: BannerButtonType[] = [
-    {
-        title: '3R教室',
-        icon: () => <RoomIcon />,
-        desc: '体系化学习TS全栈开发',
-        link: '/classroom',
-    },
+    // {
+    //     title: '3R教室',
+    //     icon: () => <RoomIcon />,
+    //     desc: '体系化学习TS全栈开发',
+    //     link: '/classroom',
+    // },
     {
         title: '自由办公',
         icon: () => <WorkIcon />,

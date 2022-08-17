@@ -27,11 +27,7 @@ import $styles from '../style.module.css';
 
 :::
 
-:::tip
 
-如果你需要体系深入的学习Node.js,React等TS全栈开发技能，并寻找更好的远程工作或承接远程外包，可以加入[小站](https://pincman.com)的[3R教室](/classroom)
-
-:::
 
 ## ✍️目标学者
 
