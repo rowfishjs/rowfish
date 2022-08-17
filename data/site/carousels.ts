@@ -9,11 +9,11 @@ export const carousels: CarouselItemType[] = [
         description:
             '用于构建知识分享及知识付费的博客系统<br />为计算机从业者提升个人求职竞争力或从事网络授课/自媒体等作为副业而打造！',
     },
-    {
-        image: require('../blog/images/classroom.png'),
-        link: '/classroom',
-        darkBg: false,
-    },
+    // {
+    //     image: require('../blog/images/classroom.png'),
+    //     link: '/classroom',
+    //     darkBg: false,
+    // },
     {
         image: require('../blog/images/about.png'),
         link: '/about',
