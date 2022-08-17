@@ -29,13 +29,13 @@ import $styles from '../style.module.css';
 
 :::tip
 
-如果你需要体系深入的学习Node.js,React等TS全栈开发技能，并寻找更好的远程工作或承接远程外包，可以加入[小站](https://pincman.com)的[极速教室](/classroom)
+如果你需要体系深入的学习Node.js,React等TS全栈开发技能，并寻找更好的远程工作或承接远程外包，可以加入[小站](https://pincman.com)的[3R教室](/classroom)
 
 :::
 
 :::tip
 
-[极速教室](/classroom)中会从基础开始教学并包含本教程中没有涉及到的Nextjs,Electron等技能
+[3R教室](/classroom)中会从基础开始教学并包含本教程中没有涉及到的Nextjs,Electron等技能
 
 :::
 

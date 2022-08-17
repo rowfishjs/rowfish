@@ -188,9 +188,9 @@ By the way
         <li>👍 <a href="/docs/courses/tailwind-guides"><strong>Golang入门指南</strong></a> :让我们一起学习Golang吧</li>
     </ul>
    </TabItem>
-   <TabItem value="edu" label="📽 极速教室">
+   <TabItem value="edu" label="📽 3R教室">
         <p>对于想体系化学习React前端,Node.js,Typescript全栈开发以及希望寻找远程工作和拓展接单渠道的同学小站提供了
-          <a href="/classroom">极速教室</a>,具体有以下几点服务
+          <a href="/classroom">3R教室</a>,具体有以下几点服务
         </p>
         <ul>
             <li>👉 从基础体系开始教学,三个月内成为前端/Node.js高手,半年内成为全栈高手</li>

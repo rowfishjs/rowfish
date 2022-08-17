@@ -7,7 +7,7 @@ import OrderIcon from '@ricons/material/HandshakeOutlined';
 
 export const bannerButtons: BannerButtonType[] = [
     {
-        title: '极速教室',
+        title: '3R教室',
         icon: () => <RoomIcon />,
         desc: '体系化学习TS全栈开发',
         link: '/classroom',
