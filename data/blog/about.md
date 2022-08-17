@@ -188,7 +188,7 @@ By the way
         <li>👍 <a href="/docs/courses/tailwind-guides"><strong>Golang入门指南</strong></a> :让我们一起学习Golang吧</li>
     </ul>
    </TabItem>
-   <TabItem value="edu" label="📽 3R教室">
+   {/* <TabItem value="edu" label="📽 3R教室">
         <p>对于想体系化学习React前端,Node.js,Typescript全栈开发以及希望寻找远程工作和拓展接单渠道的同学小站提供了
           <a href="/classroom">3R教室</a>,具体有以下几点服务
         </p>
@@ -199,7 +199,7 @@ By the way
             <li>👉 帮助你寻找远程工作以及教授远程工程的求职技巧</li>
             <li>👉 拓展你自由职业的接单渠道以及教授你价格谈判技巧</li>
         </ul>
-  </TabItem>
+  </TabItem> */}
   <TabItem value="free" label="🍰 外包接单">
     🍌 站长长期承接各类外包项目，有意者请点击左侧工具栏的联系方式按钮联系我
   </TabItem>

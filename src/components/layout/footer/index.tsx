@@ -31,7 +31,12 @@ export const Footer: FC<{ className?: string }> = ({ className }) => {
                 {!isNil(siteData.beian) && (
                     <div className={clsx($styles.btn, $styles.beian)}>
                         <span>{siteData.beian.prefix}</span>
-                        <a href="https://beian.miit.gov.cn/" target="_blank" rel="noreferrer">
+                        <a
+                            href="https://beian.miit.gov.cn/"
+                            target="_blank"
+                            rel="noreferrer"
+                            style={{ letterSpacing: '0' }}
+                        >
                             {siteData.beian.code}
                         </a>
                     </div>

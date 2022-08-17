@@ -28,7 +28,7 @@ export const siteData: SiteDataType = {
     },
     beian: {
         prefix: '浙ICP备',
-        code: '18013418号 - 6',
+        code: '18013418号-6',
     },
 };
 
