@@ -37,7 +37,8 @@ export const Footer: FC<{ className?: string }> = ({ className }) => {
                             rel="noreferrer"
                             style={{ letterSpacing: '0' }}
                         >
-                            {siteData.beian.prefix}-{siteData.beian.code}
+                            {siteData.beian.prefix}
+                            {siteData.beian.code}
                         </a>
                     </div>
                 )}
