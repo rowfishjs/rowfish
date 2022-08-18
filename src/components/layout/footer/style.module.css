@@ -43,11 +43,11 @@
 
     & > .beian {
         & > span {
-            @apply tw-bg-green-900/50;
+            @apply tw-bg-amber-500/50;
         }
 
         & > a {
-            @apply tw-bg-amber-500/50;
+            @apply tw-bg-green-900/50;
         }
     }
 }
