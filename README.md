@@ -44,7 +44,7 @@
 
 >    演示站点请看我的[博客][pincman]
 
-过去我一直打算做一个博客，也可以自己写写文章啥的。因为很多年前用过typecho，一直感觉还不错，但是最近因为一直在用[vscode][vscode]以及[obsidian][obsidian]写文章，而[vscode][vscode]和[obsidian][obsidian]是可以直接打开一个工作空间来管理文档的，所以使用静态博客直接编辑.md文件发布显然更适合。找了一下静态博客程序，发觉hexo，hugo，vuepress，[docusaurus][docusaurus]都还挺不错的，但是hexo，hugo没有自带文档系统，显然不符合我需要长期写文档的要求，这两首先排除。由于我个人对vue3不大熟悉，工作中长期使用[react][react]，所以自然而然的选择了基于[react][react]的[docusaurus][docusaurus]。
+过去一直打算做一个博客，也可以自己写写文章啥的。因为很多年前用过typecho，一直感觉还不错，但是最近因为一直在用[vscode][vscode]以及[obsidian][obsidian]写文章，而[vscode][vscode]和[obsidian][obsidian]是可以直接打开一个工作空间来管理文档的，所以使用静态博客直接编辑.md文件发布显然更适合。找了一下静态博客程序，发觉hexo，hugo，vuepress，[docusaurus][docusaurus]都还挺不错的，但是hexo，hugo没有自带文档系统，显然不符合我需要长期写文档的要求，这两首先排除。由于我个人对vue3不大熟悉，工作中长期使用[react][react]，所以自然而然的选择了基于[react][react]的[docusaurus][docusaurus]。
 
 默认的[docusaurus][docusaurus]不大符合中文站点的审美，也不像vuepress那样拥有大量好看的开源主题，于是干脆自己动手设计开发了一款。
 
