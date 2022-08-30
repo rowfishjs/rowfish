@@ -26,7 +26,7 @@ export const courses: CourseCardItemType[] = [
     {
         name: 'Go语言入门指南',
         image: require('./images/courses/golang-base-guide.png'),
-        href: '/docs/courses/golang-guides/overview',
+        href: '/docs/courses/golang-guides/get-start',
         status: 1,
         description: '快速全方位的掌握Golang的基础知识,为进阶打好基础',
     },
