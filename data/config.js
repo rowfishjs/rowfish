@@ -41,6 +41,11 @@ const navbarItems = [
                 label: '3R教程',
                 className: 'navicon room-icon',
             },
+            {
+                to: '/about#订阅小站',
+                label: '订阅小站',
+                className: 'navicon subscribe-icon',
+            },
         ],
     },
     {

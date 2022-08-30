@@ -66,6 +66,10 @@
     mask-image: url('/images/icons/dianya.svg');
 }
 
+.subscribe-icon::before {
+    mask-image: url('/images/icons/book.svg');
+}
+
 .yargs-icon::before {
     background-image: url('/images/icons/react-router.png');
 }
