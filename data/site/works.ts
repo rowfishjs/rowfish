@@ -22,7 +22,7 @@ export const works: WorkCardItemType[] = [
         name: 'Rowfish Pro',
         desc: '基于Wordpress及Rizhuti-V2开发的一款用于在线网课及知识付费的主题,包含问答系统,会员体系,在线支付等功能',
         link: '/rowfish#关于Pro',
-        demo: 'https://v.pincman.com',
+        demo: 'https://jikexingkong.com',
         buy: 'http://wpa.qq.com/msgrd?v=3&uin=1849600177&site=qq&menu=yes',
         tags: ['docusarus', 'typescript', 'react', 'theme'],
     },
