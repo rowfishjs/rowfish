@@ -102,6 +102,7 @@ Node.js的优势并不在于生态或性能
 3. 👉 [第三集: 模型关联与树形嵌套](/docs/courses/nestjs-practise/chapter3)
 4. 👉 [第四集: 排序,分页与过滤的实现](/docs/courses/nestjs-practise/chapter4)
 5. 👉 [第五集: 自动验证,序列化与异常处理](/docs/courses/nestjs-practise/chapter5)
+6. 👉 [第六集: 简化代码与自定义约束](https://pincman.com/docs/courses/nestjs-practise/chapter6)
 
 ## 🌒 知识点
 
