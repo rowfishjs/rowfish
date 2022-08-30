@@ -38,7 +38,7 @@
 ![](https://pic.pincman.com/media/202206301202195.png?imageMogr2/format/webp)
 >   [Rowfish][rowfish]是一套用于构建个人文档库，作品展示和博客系统的[Docusaurus][docusaurus]主题，**主题基于[MIT license](https://opensource.org/licenses/MIT)协议完全开源**，专为计算机从业者提升个人求职竞争力或于宁自媒体等而打造！ 🐳
 
-**V2.0正式发布,欢迎体验**
+**V2.0.1正式发布,欢迎体验**
 
 ## 🚀缘起
 
