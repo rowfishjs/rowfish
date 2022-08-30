@@ -1,3 +1,4 @@
+/* eslint-disable global-require */
 import { SiteDataType, DockItem } from '@site/src/types';
 import React from 'react';
 import GithubAlt from '@ricons/fa/GithubAlt';
@@ -16,9 +17,6 @@ import Juejin from './images/common/dockBtns/juejin.svg';
 import Feishu from './images/common/dockBtns/feishu.svg';
 import Gitea from './images/common/dockBtns/gitea.svg';
 import BiliBili from './images/common/dockBtns/bilibili.svg';
-
-import WechatBlock from './images/common/wechat.jpg';
-import FeishuBlock from './images/common/feishu.jpg';
 
 export const siteData: SiteDataType = {
     owner: {
@@ -110,7 +108,7 @@ export const dockItems: DockItem[] = [
         name: '微信',
         icon: Wechat,
         onClick: () =>
-            openDockModal('wechat-modal', WechatBlock, {
+            openDockModal('wechat-modal', 'https://img.pincman.com/media/202208302338338.jpg', {
                 w: 192,
                 h: 192,
             }),
@@ -125,7 +123,7 @@ export const dockItems: DockItem[] = [
         name: '飞书',
         icon: Feishu,
         onClick: () =>
-            openDockModal('feishu-modal', FeishuBlock, {
+            openDockModal('feishu-modal', 'https://img.pincman.com/media/202208302339327.jpg', {
                 w: 160,
                 h: 208,
             }),
