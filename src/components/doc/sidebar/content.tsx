@@ -14,7 +14,7 @@ function useShowAnnouncementBar() {
     const [showAnnouncementBar, setShowAnnouncementBar] = useState(isActive);
 
     useScrollPosition(
-        ({ scrollY }) => {
+        ({ scrollY }: any) => {
             if (isActive) {
                 setShowAnnouncementBar(scrollY === 0);
             }

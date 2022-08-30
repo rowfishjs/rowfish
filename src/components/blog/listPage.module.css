@@ -35,7 +35,7 @@
             }
 
             > small {
-                @apply tw-line-clamp-2 tw-break-all  tw-text-xs tw-leading-[1.125rem] tw-text-zinc-800;
+                @apply tw-line-clamp-2 tw-break-all  tw-text-xs tw-leading-[1.125rem] tw-text-zinc-800 tw-h-9;
             }
         }
     }

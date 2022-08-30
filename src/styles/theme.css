@@ -201,9 +201,9 @@ ul {
 .dropdown__link {
     @apply tw-items-center lg:tw-inline-flex tw-font-kaiti;
 
-    &::before {
-        margin-top: -0.12rem;
-    }
+    /* &::before {
+        margin-top: -0.05rem;
+    } */
 }
 
 .dropdown__link {

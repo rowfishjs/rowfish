@@ -38,7 +38,7 @@ const navbarItems = [
             },
             {
                 to: '/classroom',
-                label: '极速教程',
+                label: '3R教程',
                 className: 'navicon room-icon',
             },
         ],
@@ -68,6 +68,13 @@ const navbarItems = [
         label: '导航',
         position: 'right',
         className: 'navicon links-icon',
+    },
+
+    {
+        href: 'https://eleduck.com/',
+        label: '远程工作',
+        position: 'right',
+        className: 'navicon dianya-icon',
     },
 ];
 module.exports = {

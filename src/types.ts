@@ -35,6 +35,7 @@ export interface LinkCategory {
 export interface CourseCardItemType {
     name: string;
     href: string;
+    price?: number;
     isFree?: boolean;
     description?: string;
     color?: 'success' | 'danger' | 'info';

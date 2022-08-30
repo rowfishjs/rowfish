@@ -1,3 +1,4 @@
+/* eslint-disable no-nested-ternary */
 import React, { FC, useEffect, useState } from 'react';
 
 import PointIcon from '@ricons/fa/HandPointRightRegular';
@@ -28,7 +29,7 @@ import $styles from './style.module.css';
 const bgImages = [BG1, BG2, BG3, BG4, BG5, BG6, BG7];
 
 const statuses: Array<{ text: string; color: string }> = [
-    { text: '策划中', color: '#10c469' },
+    { text: '即将上线', color: '#10c469' },
     { text: '更新中', color: '#ff5b5b' },
     { text: '已完结', color: '#536de6' },
 ];
@@ -54,7 +55,7 @@ export const CourseCardItem: FC<{ course: CourseCardItemType; i: number }> = ({ 
                 <span style={{ backgroundColor: statuses[course.status ?? 0].color }}>
                     {statuses[course.status ?? 0].text}
                 </span>
-                {/* <span
+                <span
                     style={{
                         whiteSpace: 'nowrap',
                         fontSize: '0.75rem',
@@ -62,21 +63,19 @@ export const CourseCardItem: FC<{ course: CourseCardItemType; i: number }> = ({ 
                             course.isFree || isNil(course.isFree) ? colors.success : colors.danger,
                     }}
                 >
-                    {course.isFree || isNil(course.isFree) ? '免费' : '收费'}
-                </span> */}
+                    {course.isFree || isNil(course.isFree)
+                        ? '免费'
+                        : !isNil(course.price)
+                        ? `¥ ${course.price}`
+                        : '收费'}
+                </span>
             </div>
             <div className={$styles.media}>
                 <Image img={image} />
             </div>
             <div className={$styles.content}>
                 <h2 className={clsx($styles.title, 'tw-ellips')}>
-                    {/* <Link
-                        href={course.href}
-                        target={course.target ?? '_self'}
-                        className="tw-ellips"
-                    > */}
-                    <span>{course.name}</span>
-                    {/* </Link> */}
+                    <span className="tw-ellips">{course.name}</span>
                 </h2>
 
                 <div
@@ -116,7 +115,10 @@ export const CourseCards: FC<{ data: CourseCardItemType[] }> = ({ data }) => (
                         <PointIcon />
                     </span>
                 </span>
-                <span className="tw-font-kaiti">进入全栈教室,体验体系学习</span>
+                <span>
+                    订阅本站
+                    <span className="tw-font-kaiti">(永久获取所有教程源码及享受问答服务)</span>
+                </span>
             </Link>
         </div>
     </>

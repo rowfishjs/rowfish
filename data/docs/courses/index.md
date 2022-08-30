@@ -1,4 +1,5 @@
 ---
+title: 视频教程
 sidebar_label: 教程列表
 sidebar_position: 1
 hide_title: true
@@ -8,7 +9,7 @@ pagination_previous: null
 ---
 :::tip
 
-点击底部按钮学习更多高级教程哦
+[点此](/classroom)了解3R教室,体验体系化TS全栈开发学习,并找到你的第一份远程工作！
 
 :::
 

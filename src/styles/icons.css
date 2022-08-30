@@ -62,6 +62,10 @@
     mask-image: url('/images/icons/room.svg');
 }
 
+.dianya-icon::before {
+    mask-image: url('/images/icons/dianya.svg');
+}
+
 .yargs-icon::before {
     background-image: url('/images/icons/react-router.png');
 }

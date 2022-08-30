@@ -85,13 +85,21 @@ export const TOC: FC<Props> = ({ className, ...props }) => {
     // const [modal, setModal] = useState(() =>
     //     ExecutionEnvironment.canUseDOM ? document.createElement('div') : null,
     // );
+    const [mobile, setMobile] = useState<boolean>(false);
     const [show, setShow] = useState<boolean>(false);
     const [isBlog, setIsBlog] = useState<boolean>(false);
     const responsive = useResponsive();
     const toggleDisplay = useCallback(() => setShow((state) => !state), []);
     const context = useRouteContext();
     const isLg = ExecutionEnvironment.canUseDOM && responsive.lg;
-    useDebounceEffect(() => setShow(false), [isLg], { wait: 10 });
+    useDebounceEffect(
+        () => {
+            setShow(false);
+            setMobile(!isLg);
+        },
+        [isLg],
+        { wait: 10 },
+    );
     // useEffect(() => {
     //     setModal(() => {
     //         if (!ExecutionEnvironment.canUseDOM) return null;
@@ -120,7 +128,7 @@ export const TOC: FC<Props> = ({ className, ...props }) => {
             <div className="tw-w-full lg:tw-block tw-hidden">
                 <TocBlock {...props} />
             </div>
-            <TocMobileBlock show={show} toggle={toggleDisplay} {...props} />
+            {mobile && <TocMobileBlock show={show} toggle={toggleDisplay} {...props} />}
         </>
     ) : (
         <>
@@ -131,7 +139,7 @@ export const TOC: FC<Props> = ({ className, ...props }) => {
                     linkActiveClassName={LINK_ACTIVE_CLASS_NAME}
                 />
             </div>
-            <TocMobileBlock show={show} toggle={toggleDisplay} {...props} />
+            {mobile && <TocMobileBlock show={show} toggle={toggleDisplay} {...props} />}
         </>
     );
 };

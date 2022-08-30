@@ -1,6 +1,9 @@
 ---
+title: React18最佳实践
 sidebar_label: React18最佳实践
 hide_title: true
+pagination_prev: null
+pagination_next: null
 ---
 import Image from '@theme/IdealImage';
 import $styles from '../style.module.css';
@@ -9,27 +12,28 @@ import $styles from '../style.module.css';
     <Image img={require('../images/react-banner.png')} />
 </div>
 
+
 :::caution
 
-本教程是有[平克小站](https://pincman.com)开发及制作且**完全免费**的，未经许可不得随意篡改并商业销售，免费的分享请自便(各位同学请帮我B站三连，谢谢)
-
-:::
-
-:::note
-
-教程目录不固定,以便随时调整。目前做完一集链接就会添加到本页，具体内容可以参考下面的[教程内容](#教材内容)
-
-:::
-
-:::info
-
-不会基础ES6和TS基础知识的朋友请先查询《Typescript入门教程》](https://ts.xcatliu.com/)
+本教程是有[平克小站](https://pincman.com)开发及制作且**视频和文档是完全免费**的(仅源码和问答服务收费)，未经许可不得随意篡改并商业销售，免费的分享请自便(各位同学请帮我B站三连，谢谢)
 
 :::
 
 :::tip
 
-如果你需要体系深入的学习Node.js,React等TS全栈开发技能，并寻找更好的远程工作或承接远程外包，可以加入[小站](https://pincman.com)的[3R教室](/classroom)
+如果你想永久免费获取所有最新课程的源码及获得教程问答服务,请[订阅小站](/about/#订阅小站)
+
+:::
+
+:::info
+
+如果你需要体系化地学习Node.js,React等TS全栈开发技能,并想寻找一份好的远程工作,可以报名[3R教室](/classroom)
+
+:::
+
+:::note
+
+不会基础ES6和TS基础知识的朋友请先查询[《Typescript入门教程》](https://ts.xcatliu.com/)
 
 :::
 
@@ -44,13 +48,33 @@ import $styles from '../style.module.css';
 - 👉 Jquery为主的传统MVC开发者: Jquery+PHP/ROR写腻了? 那么就来追一下潮流哈
 - 👉 Gopher,Javaer等职业后端: 想成为全栈开发者或者至少不再与前端争论对错和扯皮,自己能看懂前端代码,那么本教程正适合你
 
-## 🔥教程目录
+## 🔥 购买方法
+
+- **[3R教室](/classroom)**的同学可永久学习所有教程
+- **[订阅本站](/about#订阅小站)**可永久学习所有教程
+- 单独购买本课请直接联系我，**[查看联系方式](/about#联系方式)**
+
+## 🍉 教程目录
+
+:::note
+
+课程目录不固定，方便随时调整，或跟着版本升级来修改，所讲到的知识点请看下面
+
+:::
 
 > 待更新
 
-## 🌒教程内容
+## 🌒 知识点
 
-本教程篇幅定在二十五集左右，内容涉及React的绝大多数新生态，通过一个Spa后台的实战案例的开发非常全面地讲解React+TS项目开发中的方方面面,使大家能全面深入的掌握React及其周边的生态.
+本套教程基本的知识点如下：
+
+:::info
+
+如果觉得不清晰，请看[3R教室](/classroom#教学内容)中的React体系部分(不包括Nextjs等额外框架)
+
+:::
+
+本教程篇幅定在二十集左右，内容涉及React的绝大多数新生态，通过一个Spa后台的实战案例的开发非常全面地讲解React+TS项目开发中的方方面面,使大家能全面深入的掌握React及其周边的生态.
 
 本套教程基本的知识点如下：
 
@@ -77,4 +101,7 @@ import $styles from '../style.module.css';
 
 ## 👀问题解决
 
-如果在教程中遇到问题，可以扫码加视频里的QQ群提问，可以加我微信**yjosscom**，我会把你拉微信群，在群里提问反馈会比QQ群更快
+如果在教程学习过程中遇到问题:
+
+- 免费学者可以扫码加视频里的QQ群或者加我微信**yjosscom**进群讨论
+- 订阅者或购买本教程后(包括3R教室的同学)，请直接进入飞书群提问，我会在群里详细解答
