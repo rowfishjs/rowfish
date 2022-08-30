@@ -93,19 +93,37 @@ Node.js的优势并不在于生态或性能
 
 ## 🍉 教程目录
 
-:::note
+:::tip
 
-课程目录不固定，方便随时调整，或跟着版本升级来修改，所讲到的知识点请看下面
+教程中的代码和文档长期跟随Nestjs官方版本以及Node.js版本的升级而更新，无需担心过时问题
 
 :::
 
-1. 👉 [第一集: 编码环境搭建](/docs/courses/nestjs-practise/chapter1)
-2. 👉 [第二集: 基本数据操作](/docs/courses/nestjs-practise/chapter2)
-3. 👉 [第三集: 模型关联与树形嵌套](/docs/courses/nestjs-practise/chapter3)
-4. 👉 [第四集: 排序,分页与过滤的实现](/docs/courses/nestjs-practise/chapter4)
-5. 👉 [第五集: 自动验证,序列化与异常处理](/docs/courses/nestjs-practise/chapter5)
-6. 👉 [第六集: 简化代码与自定义约束](/docs/courses/nestjs-practise/chapter6)
-7. 👉 [第七集: 批量操作与软删除](/docs/courses/nestjs-practise/chapter7)
+1. 👉 [编码环境搭建](/docs/courses/nestjs-practise/chapter1)
+2. 👉 [基本数据操作](/docs/courses/nestjs-practise/chapter2)
+3. 👉 [模型关联与树形嵌套](/docs/courses/nestjs-practise/chapter3)
+4. 👉 [排序,分页与过滤的实现](/docs/courses/nestjs-practise/chapter4)
+5. 👉 [自动验证,序列化与异常处理](/docs/courses/nestjs-practise/chapter5)
+6. 👉 [简化代码与自定义约束](/docs/courses/nestjs-practise/chapter6)
+7. 👉 [批量操作与软删除](/docs/courses/nestjs-practise/chapter7)
+8. CRUD抽象化框架构建
+9. 用户模块-JWT与守卫实现
+10. 用户模块-Redis+BullMQ实现短信及邮件验证
+11. 用户模块-RBAC权限系统
+12. 用户模块-动态关联实现
+13. 配置模块与Open API(swagger)配置实现
+14. websockets与SSE实现上线与消息广播
+15. 整合ElasticSearch实现全文搜索
+16. Jest测试与E2E测试编写
+17. 缓存与日志中间件编写
+18. 使用Yargs构建CLI工具
+19. 实现数据结构迁移命令与数据填充命令
+20. HTTP客户端与爬虫实现
+21. Crontab 定时任务开编写
+22. Graphql api编写
+23. Nginx反向代理与PM2部署
+24. Gitea+Drone自动化CI/CD
+25. 使用Lerna/pnpm实现Monorepo组织结构
 
 ## 🌒 知识点
 
