@@ -109,7 +109,7 @@ export const CourseCards: FC<{ data: CourseCardItemType[] }> = ({ data }) => (
             ))}
         </div>
         <div className="tw-mt-5 tw-text-center tw-w-full">
-            <Link className="tw-ghostBtn" href="/classroom" rel="noreferrer">
+            <Link className="tw-ghostBtn" href="/about/#订阅小站" rel="noreferrer">
                 <span className="tw-ghost-icon">
                     <span className="xicon">
                         <PointIcon />

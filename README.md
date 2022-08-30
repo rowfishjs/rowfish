@@ -9,9 +9,7 @@
 [docusaurus]: https://docusaurus.io
 [php]: https://php.net
 [wordpress]: https://wordpress.org
-
 [laravel]: https://laravel.com
-
 [nextjs]: https://nextjs.org
 [nestjs]: https://nestjs.com
 [typescript]: https://typescript.org
