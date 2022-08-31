@@ -109,7 +109,7 @@ Node.js的优势并不在于生态或性能
 5. 👉 [自动验证,序列化与异常处理](/docs/courses/nestjs-practise/chapter5)
 6. 👉 [简化代码与自定义约束](/docs/courses/nestjs-practise/chapter6)
 7. 👉 [批量操作与软删除](/docs/courses/nestjs-practise/chapter7)
-8. CRUD抽象化框架构建
+8. 👉 [CRUD抽象化框架构建](/docs/courses/nestjs-practise/chapter8)
 9. 用户模块-JWT与守卫实现
 10. 用户模块-Redis+BullMQ实现短信及邮件验证
 11. 用户模块-RBAC权限系统
