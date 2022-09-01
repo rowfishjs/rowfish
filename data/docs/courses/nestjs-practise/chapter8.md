@@ -1,6 +1,6 @@
 ---
 sidebar_label: CRUD抽象化框架构建
-sidebar_position: 7
+sidebar_position: 9
 ---
 
 # CRUD抽象化框架构建
