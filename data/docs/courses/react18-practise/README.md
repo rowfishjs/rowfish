@@ -60,7 +60,7 @@ import $styles from '../style.module.css';
 
 教程以站长原本开发的一个react17后台管理面板[toome](https://github.com/toomejs/toome)为原型，并升级为React18来讲解
 
-教程篇幅定在二十集，内容涉及React的绝大多数新生态，通过一个Spa后台的实战案例的开发非常全面地讲解React+TS项目开发中的方方面面,使大家能全面深入的掌握React及其周边的生态.
+教程内容涉及React的绝大多数新生态，通过一个Spa后台的实战案例的开发非常全面地讲解React+TS项目开发中的方方面面,使大家能全面深入的掌握React及其周边的生态.
 
 教程目录如下:
 
@@ -81,9 +81,22 @@ import $styles from '../style.module.css';
 15.  番外篇-使用Jotai进行状态管理
 16.  番外篇-常用React库的介绍与使用
 17.  Jest测试与E2E测试编写
-18.  React构建SSR网站应用初步
-19.  Nextjs应用开发详解
-20.  结合Nestjs,PNPM构建Monorepo仓库
+
+### 3R教室文档
+:::tip
+
+以下文档为[3R教室](/classroom)讲课时一些比教程多出来的文档，非3R教室的同学忽略就可以
+
+:::
+
+- 一些常用的React库使用
+- React-three-fiber 3D构建
+- Electron+React使用详解
+- React构建SSR网站应用初步
+- Nextjs应用开发详解
+- 深入浅出CRA与Webpack
+- 结合Nestjs,PNPM构建Monorepo仓库
+- Docusaurus打造个人网站与远程工作求职指导
 
 ## 🌒 知识点
 

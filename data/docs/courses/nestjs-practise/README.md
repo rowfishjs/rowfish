@@ -128,6 +128,18 @@ Node.js的优势并不在于生态或性能
 24. Gitea+Drone自动化CI/CD
 25. 使用Lerna/pnpm实现Monorepo组织结构
 
+### 3R教室文档
+:::tip
+
+以下文档为[3R教室](/classroom)讲课时一些比教程多出来的文档，非3R教室的同学忽略就可以
+
+:::
+
+- 👉 [深入理解Typescript装饰器](/ts-decorator)
+- 熟练使用进程/协程，Fork，Cluster，高性能和分布式等
+- Linux基础运维,任务调度等
+- 结合腾讯云使用Serveless开发
+
 ## 🌒 知识点
 本教程可能会涉及到的知识点以及学习目标如下
 
