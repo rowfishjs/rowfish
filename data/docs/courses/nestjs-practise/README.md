@@ -110,12 +110,12 @@ Node.js的优势并不在于生态或性能
 6. 👉 [简化代码与自定义约束](/docs/courses/nestjs-practise/chapter6)
 7. 👉 [批量操作与软删除](/docs/courses/nestjs-practise/chapter7)
 8. 👉 [CRUD抽象化框架构建](/docs/courses/nestjs-practise/chapter8)
-9. 用户模块-JWT与守卫实现
-10. 用户模块-Redis+BullMQ实现短信及邮件验证
-11. 用户模块-RBAC权限系统
-12. 用户模块-动态关联实现
-13. 配置模块与Open API(swagger)配置实现
-14. websockets与SSE实现上线与消息广播
+9. 👉 [JWT与守卫实现](/docs/courses/nestjs-practise/chapter9)
+10. 👉 [Redis+BullMQ实现短信及邮件验证](/docs/courses/nestjs-practise/chapter10)
+11. websocket实现IM功能与SSE实现消息广播
+12. RBAC权限系统
+13. 用户资源与动态关联实现
+14. 配置模块与Open API(swagger)配置实现
 15. 整合ElasticSearch实现全文搜索
 16. Jest测试与E2E测试编写
 17. 缓存与日志中间件编写
